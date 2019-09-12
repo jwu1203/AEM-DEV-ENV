@@ -1,0 +1,634 @@
+RewriteCond %{REQUEST_URI} ^/twitter/?$
+RewriteRule ^(.*)$ http://twitter.com/rwjf [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/facebook/?$
+RewriteRule ^(.*)$ http://www.facebook.com/RobertWoodJohnsonFoundation [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/linkedin/?$
+RewriteRule ^(.*)$ http://www.linkedin.com/company/robert-wood-johnson-foundation [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/leadershipnetwork/?$
+RewriteRule ^(.*)$ https://www.linkedin.com/groups/4925884/ [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/humancapitalnetwork/?$
+RewriteRule ^(.*)$ http://www.linkedin.com/groups?gid=7413479 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/applyForGrant/openCalls.jsp$
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/calls-for-proposals/current-calls-for-proposals.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/goto/electronicmedia/?
+RewriteRule ^(.*)$ https://www.rwjf.org/content/dam/files/rwjf-web-files/GranteeResources/RWJF_ElectronicMedia.pdf [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/goto/hitadoption/?$
+RewriteRule ^(.*)$ https://www.rwjf.org/en/library/research/2012/04/health-information-technology-in-the-united-states.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/EIN/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=21375 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/EvaluatingInnovationsInNursing/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=20742 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/LIFP/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=19831 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/MFD9/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfplist.jsp [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/PH1/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=19849 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/aco/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=21401 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/activelivingbydesign/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=19312 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/activelivingresearch/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=20641 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/adkfgdfg/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/pr/topic.jsp?topicid=1318 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/advancingrecovery/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=19843 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/afdis/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=21364 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/afjr/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=21365 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/alpes/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=19317 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/alr/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=21121 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/alr10/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=21041 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/amfdp/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=21387 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/caringacrosscommunities/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=19607 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/cashandcounseling/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=19322 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/cb1/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=20381 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/chl/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=21373 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/chrprize/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=21422 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/cjs/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=21397 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/clinicalscholars/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=20561 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/commonground/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=19626 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/commongroundprogram/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=19626 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/communityhealthleaders/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=20902 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/communitypartnerships/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=19299 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/coppe/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=21382 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/csp/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=21414 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/cv1/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=20541 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/cv2/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=21101 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/cvc/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=19855 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/depressioninprimarycare/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=19316 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/ein/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=21375 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/enf/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=21409 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/evaluatinginnovationsinnursing/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=20742 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/findinganswers/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=20401 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/findinganswers4/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=20941 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/forces4quality/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=19589 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/fwp/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=21406 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/generalistphysician/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=19300 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/hc1/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=21371 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/hcfo/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=21392 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/healthimpactproject/?$
+RewriteRule ^(.*)$ http://my.rwjf.org/login.do?adminurl=http%3A%2F%2Fpweb1.rwjf.org%2Fadmin%2Fcfp%2Fedit.jsp%3FID%3D20921&redirect=admin [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/healthyeatingresearch/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/files/applications/cfp/cfp-HERround2.pdf [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/healthykidshealthycommunities/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=20603 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/her/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=21417 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/hernc/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=21418 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/hetinitiative/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=19310 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/hgr/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=20424 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/hhs/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=21001 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/hia/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=21404 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/hpf/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=21408 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/hpr/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=21405 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/hss/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=21395 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/ia/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=21413 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/ifh/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=21384 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/inqri/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=20508 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/investigatorawards/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=20604 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/j2c-implementation/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=19838 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/j2c-research/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=19845 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/jobs2careers-implementation/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=19838 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/jobs2careers-research/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=19845 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/jobstocareers/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=19526 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/jobstocareers,/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=19526 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/leadershipforhealthycommunities-implementation/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfplist.jsp [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/leadershipforhealthycommunities-planning/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=19859 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/lfp/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=21021 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/lfp2010/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=20605 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/lfp_peacefulpathways/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=20981 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/lifp/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=19831 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/match/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=21351 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/mfd/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=21419 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/mfd8/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=20910 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/mhealth/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/pioneer/cfp.jsp?ID=21366 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/minoritymedical/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=19323 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/mli/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=20702 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/mm/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/pr/search.jsp?topicid=1073&subtopic=1320 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/nciji/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=21399 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/ncimc/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=21400 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/ncin/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=21410 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/ncji/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=21344 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/ncjr/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=21061 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/ncmc/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=21343 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/newcareersinnursing/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=20905 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/newconnections/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=19751 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/newroutes/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=19837 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/nfs/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=21412 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/njhi/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=21416 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/nursefacultyscholars/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=20427 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/partnersinnursing/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=19709 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/pathstorecovery/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=19311 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/pcap/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=21396 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/pdhc/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=21421 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/ph2/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=20581 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/phlr/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=21388 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/phlr2/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=21022 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/phlr3/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=21342 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/phsne/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=21389 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/phssr/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=21411 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/phssrmrs/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=21398 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/physicianfacultyscholars/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=19860 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/pi1/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=21372 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/pi2/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=21420 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/pin/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=20903 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/projecthealthdesign/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=20762 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/qe2/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=20341 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/qe3/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=21081 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/qe4/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=21321 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/qe5/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=21281 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/qe7/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=21379 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/retainexperiencednurses/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=19706 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/retainexperiencednursesw/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=19706 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/roadmaps/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=21390 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/saludamerica/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=20506 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/saprp/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=19686 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/saprp9/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=19320 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/scholarsinhealthpolicyresearch/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=20841 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/shprp/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=19321 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/smokefreefamilies/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=19267 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/solvingdisparities/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=19833 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/speakingtogether/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=19507 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/sre/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=21386 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/statecoverage/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=19856 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/tobaccopolicychange/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?CFPCODE=PAD [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/wwn/?$
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/applications/solicited/cfp.jsp?ID=19706 [R=301,L]
+
+
+
+RewriteCond %{REQUEST_URI} ^/goto/opennotes?$
+RewriteRule ^(.*)$ https://www.rwjf.org/content/rwjf/en/grants/grantees/OpenNotes.html?cid=xfb_rwjf_012 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/content/dam/files/rwjf-web-files/GranteeResources/RWJF_BudgetRevisionGuidelines\.pdf$
+RewriteRule ^(.*)$ https://www.rwjf.org/content/dam/files/rwjf-web-files/GranteeResources/RWJF_BudgetRevisionGuidelines_FINAL.pdf [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/content/dam/files/rwjf-web-files/GranteeResources/RWJF_BudgetRevisionGuidelinesUnder500k\.pdf$
+RewriteRule ^(.*)$ https://www.rwjf.org/content/dam/files/rwjf-web-files/GranteeResources/RWJF_BudgetRevisionGuidelines_FINAL.pdf [R=301,L]
+
+
+RewriteCond %{REQUEST_URI}  ^/goto/projectecho/?$
+RewriteRule ^(.*)$ https://www.rwjf.org/pioneer/product.jsp?id=71905&cid=xfb_rwjf_010 [R=301,L]
+
+RewriteCond %{REQUEST_URI}  ^/goto/krisvolcheck/?$
+RewriteRule ^(.*)$ https://www.rwjf.org/humancapital/product.jsp?id=72685&cid=xfb_rwjf_011 [R=301,L]
+
+RewriteCond %{REQUEST_URI}  ^/goto/middleschoolmatters/?$
+RewriteRule ^(.*)$ https://www.rwjf.org/vulnerablepopulations/product.jsp?id=74129&cid=xdr_msm_001 [R=301,L]
+
+RewriteCond %{REQUEST_URI}  ^/goto/healthleads/?$
+RewriteRule ^(.*)$ https://www.rwjf.org/vulnerablepopulations/product.jsp?id=73675&cid=xfb_rwjf_013 [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^/pph$
+RewriteRule ^(.*)$ https://www.linkedin.com/groups?gid=8101438 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/sidewalkmapping$
+RewriteRule ^(.*)$ https://www.linkedin.com/groups?gid=8100479 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/fliptheclinic/?$
+RewriteRule ^(.*)$ http://www.linkedin.com/groups?gid=8120282 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/itunes$
+RewriteRule ^(.*)$ https://itunes.apple.com/us/podcast/rwjf-pioneering-ideas-episode/id927036228?i=319817530&mt=2 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/fliptheclinic/?$
+RewriteRule ^(.*)$ http://www.linkedin.com/groups?gid=8120282 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} (?i)^/100MillionLives/?$
+RewriteRule ^(.*)$ http://www.linkedin.com/groups?gid=8200135 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} (?i)^/LNevents?$
+RewriteRule ^(.*)$ http://www.rwjflnevents.org [R=301,L]
+
+
+
+RewriteCond %{REQUEST_URI} ^/en/about-rwjf/newsroom/features-and-articles/steve-patterson\.html$
+RewriteRule ^(.*)$ https://www.rwjf.org/sportsaward [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/en/about-rwjf/newsroom/features-and-articles/steve-patterson/about-steve\.html$
+RewriteRule ^(.*)$ https://www.rwjf.org/sportsaward [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/en/about-rwjf/newsroom/features-and-articles/steve-patterson/past-winners\.html$
+RewriteRule ^(.*)$ https://www.rwjf.org/sportsaward [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/en/about-rwjf/newsroom/features-and-articles/steve-patterson/apply-and-FAQs\.html$
+RewriteRule ^(.*)$ https://www.rwjf.org/sportsaward [R=301,L]
+
+
+
+RewriteCond %{REQUEST_URI} ^/CEOspeakerrequest$
+RewriteRule ^(.*)$ https://app.smartsheet.com/b/form?EQBCT=1c3622bca3c4430a899605d7bd221bea [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/speakerrequest$
+RewriteRule ^(.*)$ https://app.smartsheet.com/b/form?EQBCT=ba2e69f7c5004fcea56c391eb01a1d61 [R=301,L]
+
+
+
+RewriteCond %{REQUEST_URI} ^/99$
+RewriteRule ^(.*)$ https://www.rwjf.org/en/library/collections/coh-prize-winners.html?cid=xgo_other_pd_ini%3Aprize2017_dte%3A20161201_des%3A99-invisible [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} /2017annualmessage$ [NC]
+RewriteRule ^(.*)$ /en/library/annual-reports/2017-annual-message.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/datahub$
+RewriteRule ^(.*)$ http://statehealthcompare.shadac.org [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/signsofprogress$
+RewriteRule ^(.*)$ https://stateofobesity.org/progress/ [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/rxreport$
+RewriteRule ^(.*)$ http://healthyamericans.org/reports/drugabuse2013/ [R=301,L]

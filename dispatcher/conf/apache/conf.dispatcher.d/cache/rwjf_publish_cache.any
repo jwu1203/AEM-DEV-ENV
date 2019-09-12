@@ -1,0 +1,45 @@
+## Put entries of items you do or don't want to cache in apaches doc root
+## the globbing pattern to be compared against the url
+## example: *             -> everything
+##        : /foo/bar.*    -> only the /foo/bar documents
+##        : /foo/bar/*    -> all pages below /foo/bar
+##        : /foo/bar[./]* -> all pages below and /foo/bar itself
+##        : *.html        -> all .html files
+## Default allow all items to cache
+
+/0201 {
+      /glob "*.tweets.json"
+      /type "deny"
+    }
+/0202 {
+      /glob "/content/rwjf/en/grants/calls-for-proposals*"
+      /type "deny"
+    }
+/0203 {
+      /glob "/robots.txt*"
+      /type "deny"
+    }
+/0204 {
+      /glob "/goto2*"
+      /type "deny"
+    }
+/0205 {
+      /glob "*.nocache.html*"
+      /type "deny"
+    }
+/0206 {
+      /glob "*/cfpproposals.closed.json"
+      /type "deny"
+    }
+/0207 {
+      /glob "/libs/granite/csrf/token.json"
+      /type "deny"
+}
+/0008 {
+      /glob "*.search"
+      /type "deny"
+}
+/0009 {
+      /glob "*.latest"
+      /type "deny"
+}

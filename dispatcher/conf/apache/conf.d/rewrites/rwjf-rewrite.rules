@@ -1,0 +1,20 @@
+# Return 403 immediately for internal dummy connection. Avoid errors and overload on the server because dummy connection are "GET /" which hit the home page.
+RewriteCond %{HTTP_USER_AGENT} ^.*internal\ dummy\ connection.*$ [NC]
+RewriteRule .* - [F,L]
+
+RewriteCond %{HTTP_HOST} ^localhost
+RewriteRule ^/?(rwjf/.*|rwjf\.html)$ /content/$1 [PT]
+
+RewriteCond %{HTTP_HOST} ^localhost
+#using 'N' flag to circle through all the rules again with the substituted uri
+RewriteRule ^/?(en/.*|en\.html)$ /content/rwjf/$1 [PT]
+
+RewriteCond %{HTTP_HOST} ^localhost
+RewriteRule ^/?communicationstoolbox(.*)$ /content/communicationstoolbox$1 [PT]
+
+RewriteCond %{HTTP_HOST} ^localhost
+RewriteRule ^/?$ /content/rwjf/en.html [PT]
+
+# Maintenance
+#RewriteCond %{REQUEST_URI} !/maintenance/(.*)$
+#RewriteRule $ /maintenance/scheduled.html [R=302,PT]

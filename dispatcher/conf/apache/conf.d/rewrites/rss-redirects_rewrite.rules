@@ -1,0 +1,267 @@
+#### Retro RSS Redirect
+#Upcoming CFPs
+RewriteCond %{REQUEST_URI}  ^/rss/cfp\.jsp$
+RewriteCond %{QUERY_STRING} ^type=upcoming$
+RewriteRule ^(.*)$ https://www.rwjf.org/rss/feed?ucfp&title=RWJF\ -\ Upcoming\ Calls\ For\ Proposals&desc=RWJF\ announces\ the\ upcoming\ release\ of\ the\ following\ calls\ for\ proposals.? [R=301,L]
+
+#Childhood Obesity CFPs
+RewriteCond %{REQUEST_URI}  ^/rss/cfp\.jsp$
+RewriteCond %{QUERY_STRING} ^pid=1138$
+RewriteRule ^(.*)$ https://www.rwjf.org/rss/feed?cfp&p=program_areas:1138&title=RWJF\ -\ Open\ Calls\ For\ Proposals\ -\ Childhood\ Obesity&desc=RWJF\ announces\ the\ following\ calls\ for\ proposals.? [R=301,L]
+
+#Coverage Obesity CFPs
+RewriteCond %{REQUEST_URI}  ^/rss/cfp\.jsp$
+RewriteCond %{QUERY_STRING} ^pid=1132$
+RewriteRule ^(.*)$ https://www.rwjf.org/rss/feed?cfp&p=program_areas:1132&title=RWJF\ -\ Open\ Calls\ For\ Proposals\ -\ Coverage&desc=RWJF\ announces\ the\ following\ calls\ for\ proposals.? [R=301,L]
+
+#Human Capital CFPs
+RewriteCond %{REQUEST_URI}  ^/rss/cfp\.jsp$
+RewriteCond %{QUERY_STRING} ^pid=1135$
+RewriteRule ^(.*)$ https://www.rwjf.org/rss/feed?cfp&p=program_areas:1135&title=RWJF\ -\ Open\ Calls\ For\ Proposals\ -\ Human\ Capital&desc=RWJF\ announces\ the\ following\ calls\ for\ proposals.? [R=301,L]
+
+#Pioneer CFPs
+RewriteCond %{REQUEST_URI}  ^/rss/cfp\.jsp$
+RewriteCond %{QUERY_STRING} ^pid=1140$
+RewriteRule ^(.*)$ https://www.rwjf.org/rss/feed?cfp&p=program_areas:1140&title=RWJF\ -\ Open\ Calls\ For\ Proposals\ -\ Pioneer&desc=RWJF\ announces\ the\ following\ calls\ for\ proposals.? [R=301,L]
+
+#Public Health CFPs
+RewriteCond %{REQUEST_URI}  ^/rss/cfp\.jsp$
+RewriteCond %{QUERY_STRING} ^pid=1141$
+RewriteRule ^(.*)$ https://www.rwjf.org/rss/feed?cfp&p=program_areas:1141&title=RWJF\ -\ Open\ Calls\ For\ Proposals\ -\ Public\ Health&desc=RWJF\ announces\ the\ following\ calls\ for\ proposals.? [R=301,L]
+
+#Quality/Equality CFPs
+RewriteCond %{REQUEST_URI}  ^/rss/cfp\.jsp$
+RewriteCond %{QUERY_STRING} ^pid=1142$
+RewriteRule ^(.*)$ https://www.rwjf.org/rss/feed?cfp&p=program_areas:1142&title=RWJF\ -\ Open\ Calls\ For\ Proposals\ -\ Quality%2FEquality&desc=RWJF\ announces\ the\ following\ calls\ for\ proposals.? [R=301,L]
+
+#Vulnerable Populations CFPs
+RewriteCond %{REQUEST_URI}  ^/rss/cfp\.jsp$
+RewriteCond %{QUERY_STRING} ^pid=1144$
+RewriteRule ^(.*)$ https://www.rwjf.org/rss/feed?cfp&p=program_areas:1144&title=RWJF\ -\ Open\ Calls\ For\ Proposals\ -\ Vulnerable\ Populations&desc=RWJF\ announces\ the\ following\ calls\ for\ proposals.? [R=301,L]
+
+#Open CFP Legacy RSS
+RewriteCond %{REQUEST_URI}  ^/rss/cfp\.jsp$
+RewriteRule ^(.*)$ https://www.rwjf.org/rss/feed?cfp&title=RWJF\ -\ Open\ Calls\ For\ Proposals&desc=RWJF\ announces\ the\ following\ calls\ for\ proposals. [R=301,L]
+
+#Another CFP Legacy RSS
+RewriteCond %{REQUEST_URI}  ^/applications/solicited/cfprss\.jsp$
+RewriteRule ^(.*)$ https://www.rwjf.org/rss/feed?cfp&title=RWJF\ -\ Open\ Calls\ For\ Proposals&desc=RWJF\ announces\ the\ following\ calls\ for\ proposals. [R=301,L]
+
+
+# News digest
+RewriteCond %{REQUEST_URI} ^/childhoodobesity/digestrss\.jsp$
+RewriteRule ^(.*)$ https://www.rwjf.org/rss/feed/newsdigest?c=Childhood-Obesity [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/vulnerablepopulations/digestrss\.jsp$
+RewriteRule ^(.*)$ https://www.rwjf.org/rss/feed/newsdigest?c=Vulnerable-Populations [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/healthpolicy/digestrss\.jsp$
+RewriteRule ^(.*)$ https://www.rwjf.org/rss/feed/newsdigest?c=Health-Policy [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/healthpolicy/digestlist\.jsp$
+RewriteRule ^(.*)$ https://www.rwjf.org/rss/feed/newsdigest?c=Health-Policy [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/humancapital/digestrss\.jsp$
+RewriteRule ^(.*)$ https://www.rwjf.org/rss/feed/newsdigest?c=Human-Capital [R=301,L]
+
+
+
+RewriteCond %{REQUEST_URI}  ^/rss/digest\.jsp$
+RewriteCond %{QUERY_STRING} ^pid=1138$
+RewriteRule ^(.*)$ https://www.rwjf.org/rss/feed/newsdigest?c=Childhood-Obesity [R=301,L]
+
+RewriteCond %{REQUEST_URI}  ^/rss/digest\.jsp$
+RewriteCond %{QUERY_STRING} ^pid=1651$
+RewriteRule ^(.*)$ https://www.rwjf.org/rss/feed/newsdigest?c=Health-Policy [R=301,L]
+
+RewriteCond %{REQUEST_URI}  ^/rss/digest\.jsp$
+RewriteCond %{QUERY_STRING} ^pid=1135$
+RewriteRule ^(.*)$ https://www.rwjf.org/rss/feed/newsdigest?c=Human-Capital [R=301,L]
+
+RewriteCond %{REQUEST_URI}  ^/rss/digest\.jsp$
+RewriteCond %{QUERY_STRING} ^pid=137$
+RewriteRule ^(.*)$ https://www.rwjf.org/rss/feed/newsdigest?c=Nursing [R=301,L]
+
+RewriteCond %{REQUEST_URI}  ^/rss/digest\.jsp$
+RewriteCond %{QUERY_STRING} ^pid=1141$
+RewriteRule ^(.*)$ https://www.rwjf.org/rss/feed/newsdigest?c=Public-Health [R=301,L]
+
+RewriteCond %{REQUEST_URI}  ^/rss/digest\.jsp$
+RewriteCond %{QUERY_STRING} ^pid=1142$
+RewriteRule ^(.*)$ https://www.rwjf.org/rss/feed/newsdigest?c=Quality-Equality [R=301,L]
+
+RewriteCond %{REQUEST_URI}  ^/rss/digest\.jsp$
+RewriteCond %{QUERY_STRING} ^pid=1144$
+RewriteRule ^(.*)$ https://www.rwjf.org/rss/feed/newsdigest?c=Vulnerable-Populations [R=301,L]
+
+#/rss/highlights.jsp - Is this still on retro?
+
+#### Blog RSS Feeds
+RewriteCond %{REQUEST_URI} ^/humancapital/feed/?$
+RewriteRule ^(.*)$ https://www.rwjf.org/en/blogs/human-capital-blog/_jcr_content.rssfeed [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/publichealth/feed/?$
+RewriteRule ^(.*)$ https://www.rwjf.org/en/blogs/new-public-health/_jcr_content.rssfeed [R=301,L]
+
+
+
+#### New FeedBurner RSS
+RewriteCond %{REQUEST_URI} ^/rss/president\.jsp$
+RewriteRule ^(.*)$ http://feeds.feedburner.com/rwjf-presidents-corner [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/rss/job\.jsp$
+RewriteRule ^(.*)$ http://feeds.feedburner.com/rwjf-employment-opportunities [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/about/jobrss\.jsp$
+RewriteRule ^(.*)$ http://feeds.feedburner.com/rwjf-employment-opportunities [R=301,L]
+
+
+
+#News Release RSS
+RewriteCond %{REQUEST_URI}  ^/rss/news\.jsp$
+RewriteCond %{QUERY_STRING} ^pid=1138$
+RewriteRule ^(.*)$ http://feeds.feedburner.com/rwjf-news-releases-childhood-obesity? [R=301,L]
+
+RewriteCond %{REQUEST_URI}  ^/rss/news\.jsp$
+RewriteCond %{QUERY_STRING} ^pid=1132$
+RewriteRule ^(.*)$ http://feeds.feedburner.com/rwjf-news-releases-coverage? [R=301,L]
+
+#Human Capital News Releases
+RewriteCond %{REQUEST_URI}  ^/rss/news\.jsp$
+RewriteCond %{QUERY_STRING} ^pid=1135$
+RewriteRule ^(.*)$ http://feeds.feedburner.com/rwjf-news-releases-human-capital? [R=301,L]
+
+RewriteCond %{REQUEST_URI}  ^/rss/news\.jsp$
+RewriteCond %{QUERY_STRING} ^pid=1140$
+RewriteRule ^(.*)$ http://feeds.feedburner.com/rwjf-news-releases-pioneer? [R=301,L]
+
+RewriteCond %{REQUEST_URI}  ^/rss/news\.jsp$
+RewriteCond %{QUERY_STRING} ^pid=1141$
+RewriteRule ^(.*)$ http://feeds.feedburner.com/rwjf-news-releases-public-health? [R=301,L]
+
+RewriteCond %{REQUEST_URI}  ^/rss/news\.jsp$
+RewriteCond %{QUERY_STRING} ^pid=1142$
+RewriteRule ^(.*)$ http://feeds.feedburner.com/rwjf-news-releases-quality-equality? [R=301,L]
+
+RewriteCond %{REQUEST_URI}  ^/rss/news\.jsp$
+RewriteCond %{QUERY_STRING} ^pid=1144$
+RewriteRule ^(.*)$ http://feeds.feedburner.com/rwjf-news-releases-vulnerable-populations? [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^/rss/news\.jsp$
+RewriteRule ^(.*)$ http://feeds.feedburner.com/rwjf-news-releases [R=301,L]
+
+# Feedburner for Taxonomy feeds
+RewriteCond %{REQUEST_URI}  ^/rss/topic\.jsp$
+RewriteCond %{QUERY_STRING} ^topicid=1006$
+RewriteRule ^(.*)$ http://feeds.feedburner.com/rwjf-topic-addiction? [R=301,L]
+
+RewriteCond %{REQUEST_URI}  ^/rss/topic\.jsp$
+RewriteCond %{QUERY_STRING} ^topicid=1180$
+RewriteRule ^(.*)$ http://feeds.feedburner.com/rwjf-topic-disparities? [R=301,L]
+
+RewriteCond %{REQUEST_URI}  ^/rss/topic\.jsp$
+RewriteCond %{QUERY_STRING} ^topicid=1194$
+RewriteRule ^(.*)$ http://feeds.feedburner.com/rwjf-topic-end-of-life-palliative-care? [R=301,L]
+
+RewriteCond %{REQUEST_URI}  ^/rss/topic\.jsp$
+RewriteCond %{QUERY_STRING} ^topicid=1049$
+RewriteRule ^(.*)$ http://feeds.feedburner.com/rwjf-topic-health-insurance-coverage? [R=301,L]
+
+RewriteCond %{REQUEST_URI}  ^/rss/topic\.jsp$
+RewriteCond %{QUERY_STRING} ^topicid=1198$
+RewriteRule ^(.*)$ http://feeds.feedburner.com/rwjf-topic-long-term-care? [R=301,L]
+
+RewriteCond %{REQUEST_URI}  ^/rss/topic\.jsp$
+RewriteCond %{QUERY_STRING} ^topicid=1088$
+RewriteRule ^(.*)$ http://feeds.feedburner.com/rwjf-topic-medical-malpractice? [R=301,L]
+
+RewriteCond %{REQUEST_URI}  ^/rss/topic\.jsp$
+RewriteCond %{QUERY_STRING} ^topicid=1318$
+RewriteRule ^(.*)$ http://feeds.feedburner.com/rwjf-topic-nurses-and-nursing? [R=301,L]
+
+RewriteCond %{REQUEST_URI}  ^/rss/topic\.jsp$
+RewriteCond %{QUERY_STRING} ^topicid=1024$
+RewriteRule ^(.*)$ http://feeds.feedburner.com/rwjf-topic-obesity-and-childhood-obesity? [R=301,L]
+
+RewriteCond %{REQUEST_URI}  ^/rss/topic\.jsp$
+RewriteCond %{QUERY_STRING} ^topicid=1067$
+RewriteRule ^(.*)$ http://feeds.feedburner.com/rwjf-topic-physical-activity? [R=301,L]
+
+RewriteCond %{REQUEST_URI}  ^/rss/topic\.jsp$
+RewriteCond %{QUERY_STRING} ^topicid=1099$
+RewriteRule ^(.*)$ http://feeds.feedburner.com/rwjf-topic-public-health? [R=301,L]
+
+RewriteCond %{REQUEST_URI}  ^/rss/topic\.jsp$
+RewriteCond %{QUERY_STRING} ^topicid=1053$
+RewriteRule ^(.*)$ http://feeds.feedburner.com/rwjf-topic-quality-of-care? [R=301,L]
+
+RewriteCond %{REQUEST_URI}  ^/rss/topic\.jsp$
+RewriteCond %{QUERY_STRING} ^topicid=1030$
+RewriteRule ^(.*)$ http://feeds.feedburner.com/rwjf-topic-tobacco? [R=301,L]
+
+# Redirect to feedburner for program area rss
+
+RewriteCond %{REQUEST_URI}  ^/rss/pa\.jsp$
+RewriteCond %{QUERY_STRING} ^pid=1138$
+RewriteRule ^(.*)$ http://feeds.feedburner.com/rwjf-childhood-obesity? [R=301,L]
+
+RewriteCond %{REQUEST_URI}  ^/rss/pa\.jsp$
+RewriteCond %{QUERY_STRING} ^pid=1132$
+RewriteRule ^(.*)$ http://feeds.feedburner.com/rwjf-coverage? [R=301,L]
+
+RewriteCond %{REQUEST_URI}  ^/rss/pa\.jsp$
+RewriteCond %{QUERY_STRING} ^pid=1135$
+RewriteRule ^(.*)$ http://feeds.feedburner.com/rwjf-human-capital? [R=301,L]
+
+RewriteCond %{REQUEST_URI}  ^/rss/pa\.jsp$
+RewriteCond %{QUERY_STRING} ^pid=1140$
+RewriteRule ^(.*)$ http://feeds.feedburner.com/rwjf-pioneer? [R=301,L]
+
+RewriteCond %{REQUEST_URI}  ^/rss/pa\.jsp$
+RewriteCond %{QUERY_STRING} ^pid=1141$
+RewriteRule ^(.*)$ http://feeds.feedburner.com/rwjf-public-health? [R=301,L]
+
+RewriteCond %{REQUEST_URI}  ^/rss/pa\.jsp$
+RewriteCond %{QUERY_STRING} ^pid=1142$
+RewriteRule ^(.*)$ http://feeds.feedburner.com/rwjf-quality-equality? [R=301,L]
+
+RewriteCond %{REQUEST_URI}  ^/rss/pa\.jsp$
+RewriteCond %{QUERY_STRING} ^pid=1144$
+RewriteRule ^(.*)$ http://feeds.feedburner.com/rwjf-vulnerable-populations? [R=301,L]
+
+# Redirect to feedburner for content type
+
+RewriteCond %{REQUEST_URI}  ^/rss/type\.jsp$
+RewriteCond %{QUERY_STRING} ^catid=12$
+RewriteRule ^(.*)$ http://feeds.feedburner.com/rwjf-charts? [R=301,L]
+
+RewriteCond %{REQUEST_URI}  ^/rss/type\.jsp$
+RewriteCond %{QUERY_STRING} ^catid=25$
+RewriteRule ^(.*)$ http://feeds.feedburner.com/rwjf-evaluations? [R=301,L]
+
+RewriteCond %{REQUEST_URI}  ^/rss/type\.jsp$
+RewriteCond %{QUERY_STRING} ^typeid=132$
+RewriteRule ^(.*)$ http://feeds.feedburner.com/rwjf-program-results? [R=301,L]
+
+RewriteCond %{REQUEST_URI}  ^/rss/type\.jsp$
+RewriteCond %{QUERY_STRING} ^typeid=125$
+RewriteRule ^(.*)$ http://feeds.feedburner.com/rwjf-journal-articles? [R=301,L]
+
+RewriteCond %{REQUEST_URI}  ^/rss/type\.jsp$
+RewriteCond %{QUERY_STRING} ^catid=14$
+RewriteRule ^(.*)$ http://feeds.feedburner.com/rwjf-issue-briefs? [R=301,L]
+
+RewriteCond %{REQUEST_URI}  ^/rss/type\.jsp$
+RewriteCond %{QUERY_STRING} ^typeid=120$
+RewriteRule ^(.*)$ http://feeds.feedburner.com/rwjf-synthesis-project? [R=301,L]
+
+RewriteCond %{REQUEST_URI}  ^/rss/type\.jsp$
+RewriteCond %{QUERY_STRING} ^catid=11$
+RewriteRule ^(.*)$ http://feeds.feedburner.com/rwjf-videos? [R=301,L]

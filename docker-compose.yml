@@ -1,0 +1,41 @@
+# $ docker-compose -p aem up -d
+#
+
+version: '3'
+
+services:
+        author:
+                build: .
+                ports:
+                        - "4502:4502"
+                        - "30303:30303"
+                restart: unless-stopped
+                volumes:
+                        - ./license.properties:/opt/aem/license.properties:ro
+                        - ./author/quickstart:/opt/aem/crx-quickstart/bin/quinckstart
+                        - ./dependencies:/opt/aem/crx-quickstart/install  
+                        - ./logs/author:/opt/aem/crx-quickstart/logs
+                command: '/opt/aem/crx-quickstart/bin/quinckstart'
+        publish:
+                build: .
+                ports:
+                        - "4503:4503"
+                        - "30302:30302"
+                restart: unless-stopped
+                volumes:
+                        - ./license.properties:/opt/aem/license.properties:ro
+                        - ./publish/quickstart:/opt/aem/crx-quickstart/bin/quinckstart
+                        - ./dependencies:/opt/aem/crx-quickstart/install  
+                        - ./logs/publish:/opt/aem/crx-quickstart/logs
+                command: '/opt/aem/crx-quickstart/bin/quinckstart'
+        dispatcher:
+                build: ./dispatcher
+                ports:
+                        - "80:80"               
+                volumes:
+                        - ./dispatcher/conf/apache/conf:/usr/local/apache2/conf
+                        - ./dispatcher/conf/apache/conf.d:/usr/local/apache2/conf.d
+                        - ./dispatcher/conf/apache/conf.dispatcher.d:/usr/local/apache2/conf.dispatcher.d
+                        - ./dispatcher/conf/apache/conf.modules.d:/usr/local/apache2/conf.modules.d
+                        - ./logs/dispatcher:/usr/local/apache2/logs
+                          #entrypoint: ["sh", "-c", "sleep 2073600"]

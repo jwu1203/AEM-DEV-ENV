@@ -1,0 +1,95 @@
+## Collect any enviromental variables that are set in /etc/sysconfig/httpd
+## Collect the dispatchers number
+
+<VirtualHost *:80>
+	ServerName      ${PUBLISH_SERVER_NAME}
+	ServerAlias     ${PUBLISH_SERVER_ALIAS}
+	ErrorDocument 404 /content/rwjf/en/errors/404.html
+    	ErrorDocument 500 /content/rwjf/en/errors/500.html
+
+	## Put names of which domains are used for your published site/content here
+	ServerAlias	${PUBLISH_DEFAULT_HOSTNAME}
+	## Use a doc root that matches what's in the /etc/httpd/conf/publish-farm.any
+	DocumentRoot	${PUBLISH_DOCROOT}
+
+	RewriteMap cohmap txt:/usr/local/apache2/conf.d/domainmap.txt
+
+	## Add header breadcrumbs for help in troubleshooting
+	<IfModule mod_headers.c>
+		## change it to be "publish 2" when deployed to publish2 disapatcher
+		Header add X-Vhost "publish 1"
+		Include /usr/local/apache2/conf.d/cache_rules/rwjf-expires.conf
+	</IfModule>
+	<Directory "${PUBLISH_DOCROOT}">
+		## Update /etc/sysconfig/httpd with setting the PUBLISH_WHITELIST_ENABLED from 0 or 1 to enable or disable ip restriction rules
+		<If "${PUBLISH_WHITELIST_ENABLED} == 1">
+			Include /usr/local/apache2/conf.d/whitelists/*_whitelist.rules
+		</If>
+		<IfModule disp_apache2.c>
+			## Some items cache with the wrong mime type
+			## Use this option to use the name to auto-detect mime types when cached improperly
+			ModMimeUsePathInfo On
+			## Use this option to avoid cache poisioning
+			## Sling will return /content/image.jpg as well as /content/image.jpg/ but apache can't search /content/image.jpg/ as a file
+			## Apache will treat that like a directory.  This assures the last slash is never stored in cache
+			DirectorySlash Off
+			## Enable the dispatcher file handler for apache to fetch files from AEM
+			SetHandler dispatcher-handler
+		</IfModule>
+		Options FollowSymLinks Includes
+		AddOutputFilter INCLUDES .html
+		AllowOverride None
+		#### Insert filter
+		SetOutputFilter DEFLATE
+		#### Don't compress images
+		SetEnvIfNoCase Request_URI \
+		\.(?:gif|jpe?g|png)$ no-gzip dont-vary
+		#### Make sure proxies don't deliver the wrong content
+		Header append Vary User-Agent env=!dont-vary
+		#### Prevent clickjacking
+		Header always append X-Frame-Options SAMEORIGIN
+	</Directory>
+	<Directory "${PUBLISH_DOCROOT}">
+		AllowOverride None
+		Require all granted
+	</Directory>
+	<IfModule disp_apache2.c>
+		## Enabled to allow rewrites to take affect and not be ignored by the dispatcher module
+		DispatcherUseProcessedURL	1	
+		## Default setting to allow all errors to come from the aem instance
+		DispatcherPassError		0
+	</IfModule>
+	<IfModule mod_rewrite.c>
+		RewriteEngine	on
+
+		#
+		#    To debug rewrite rules, uncomment this line.
+		#    and do a "tailf /etc/httpd/logs/error.log | fgrep '[rewrite:'" to observe the trace
+		LogLevel alert rewrite:trace6
+
+		##Global rewrite include
+
+		## Update /etc/sysconfig/httpd with setting the PUBLISH_FORCE_SSL from 0 or 1 to enable or disable enforcing SSL
+		<If "${PUBLISH_FORCE_SSL} == 1">
+			Include /usr/local/apache2/conf.d/rewrites/rwjf-xforwarded_forcessl_rewrite.rules
+		</If>
+
+		#include the mod_rewrite rules
+		#Include /usr/local/apache2/conf.d/rewrites/base_rewrite.rules
+		#Include /usr/local/apache2/conf.d/rewrites/disable_methods.rules
+		Include /usr/local/apache2/conf.d/rewrites/rwjf-rewrite.rules
+		#Include /usr/local/apache2/conf.d/rewrites/coh-legacy-redirect_rewrite.rules
+		#Include /usr/local/apache2/conf.d/rewrites/rss-redirects_rewrite.rules
+		#Include /usr/local/apache2/conf.d/rewrites/legacy-redirects_rewrite.rules
+		#Include /usr/local/apache2/conf.d/rewrites/blog-urls-redirect_rewrite.rules
+		#Include /usr/local/apache2/conf.d/rewrites/vanity-redirects_rewrite.rules
+		Include /usr/local/apache2/conf.d/rewrites/rwjf-vanity-rewrite.rules
+
+        #include the mod_alias rules
+        #Include /usr/local/apache2/conf.d/rewrites/blog-urls-alias-redirect.rules
+        #Include /usr/local/apache2/conf.d/rewrites/coh-legacy-alias-redirect.rules
+        #Include /usr/local/apache2/conf.d/rewrites/legacy-alias-redirect.rules
+        #Include /usr/local/apache2/conf.d/rewrites/vanity-alias-redirect.rules
+
+	</IfModule>
+</VirtualHost>

@@ -1,0 +1,5 @@
+/0002 {
+      # Consider rss feeds stale after an activation.
+      /glob "*.rssfeed"
+      /type "allow"
+}

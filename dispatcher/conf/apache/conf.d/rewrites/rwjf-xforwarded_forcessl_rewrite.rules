@@ -1,0 +1,6 @@
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteCond %{REQUEST_URI} !^/etc/newsletters/email [NC]
+#to exempt FB crawler from redirecting to https
+RewriteCond %{HTTP_USER_AGENT} !^facebookexternalhit.*$ [NC]
+RewriteRule (.*) https://%{SERVER_NAME}%{REQUEST_URI} [L,R=301]
+#RewriteRule ^/?(.*) https://%{HTTP_HOST}/$1 [NE,R,L]

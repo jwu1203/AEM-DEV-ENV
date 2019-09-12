@@ -1,0 +1,32 @@
+# Rewrite rule to capture vanity urls.  We will prefix all vanity urls with /goto2
+RewriteCond %{HTTP_HOST} ^localhost
+RewriteCond %{REQUEST_URI} !^/en
+RewriteCond %{REQUEST_URI} !^/content
+RewriteCond %{REQUEST_URI} !^/content/coh
+RewriteCond %{REQUEST_URI} !^/maintenance
+RewriteCond %{REQUEST_URI} !^/home/users
+RewriteCond %{REQUEST_URI} !^/dispatcher
+RewriteCond %{REQUEST_URI} !^/libs
+RewriteCond %{REQUEST_URI} !^/etc
+RewriteCond %{REQUEST_URI} !^/etc\.clientlibs
+RewriteCond %{REQUEST_URI} !^/api
+RewriteCond %{REQUEST_URI} !^/action
+RewriteCond %{REQUEST_URI} !^/rss
+RewriteCond %{REQUEST_URI} !^/xd_receiver\.htm
+RewriteCond %{REQUEST_URI} !^/robots\.txt
+RewriteCond %{REQUEST_URI} !^/jtemplates
+RewriteCond %{REQUEST_URI} !^/sitemap\.xml
+RewriteCond %{REQUEST_URI} !^/google
+RewriteCond %{REQUEST_URI} !^/npo\.jsp
+RewriteCond %{REQUEST_URI} !^/grant\.jsp
+RewriteCond %{REQUEST_URI} !^/product\.jsp
+RewriteCond %{REQUEST_URI} !^/css
+RewriteCond %{REQUEST_URI} !^/js
+RewriteCond %{REQUEST_URI} !^/images
+RewriteCond %{REQUEST_URI} !^/img
+RewriteCond %{REQUEST_URI} !^/goto2
+RewriteCond %{REQUEST_URI} !^/applications/solicited/cfp\.jsp
+RewriteCond %{REQUEST_URI} !^/.*\.size\.img
+RewriteCond %{REQUEST_URI} !^/favicon.ico$
+RewriteCond %{REQUEST_URI} !^/googlea53f44dfebb1a016\.html
+RewriteRule ^/(goto/)?(.*)$ /goto2/$2 [PT]

@@ -1,0 +1,5 @@
+# Redirect old blogs into Culture of health blog
+RedirectMatch 301 ^(/content/rwjf)?/en/blogs/(new-public-health|pioneering-ideas|human-capital-blog).html$ https://www.rwjf.org/en/blog/2015/01/one_blog_many_voice.html
+RedirectMatch 301 ^(/content/rwjf)?/en/blogs/(culture-of-health|new-public-health|pioneering-ideas|human-capital-blog)(.*)$ https://www.rwjf.org/en/blog$3
+RedirectMatch 301 ^(/content/rwjf)?/en/blogs.html https://www.rwjf.org/en/blog.html
+RedirectMatch 301 ^(/content/rwjf)?/en/culture-of-health(.*)$ https://www.rwjf.org/en/blog$2

@@ -1,0 +1,1585 @@
+RewriteCond %{REQUEST_URI}  ^/vulnerablepopulations/interactive\.jsp$
+RewriteRule ^(.*)$ https://www.rwjf.org/en/search-results.html?k=&c=content-type:interactives&u? [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^/index\.jsp$
+RewriteRule ^(.*)$ https://www.rwjf.org [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/reports/grr/?$
+RewriteRule ^(.*)$ https://www.rwjf.org/en/research-publications/assessing-our-impact/program-results.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/40years/index\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/about-rwjf/newsroom/features-and-articles/40th-anniversary.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/about/?$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/about-rwjf.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/about/annualreportlist\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/about-rwjf/annual-reports.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/about/assessing\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/research-publications/assessing-our-impact.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/about/governance\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/about-rwjf/our-policies.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/about/joblisting\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/about-rwjf/job-opportunities.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/about/leadership\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/about-rwjf/leadership-staff.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/about/ls\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/about-rwjf/leadership-staff.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/about/mission\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/about-rwjf/our-mission.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/about/newsletterlist\.jsp$ 
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/about/newsletterlist.jsp [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/about/office\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/about-rwjf/office-location.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/about/president\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/about-rwjf/from-the-president.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/about/president/index\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/about-rwjf/from-the-president.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/about/staff\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/about-rwjf/leadership-staff.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/about/founder\.jsp$
+RewriteRule ^(.*)$ https://www.rwjf.org/en/about-rwjf/our-mission/our-founder.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/about/founder\.jhtml$
+RewriteRule ^(.*)$ https://www.rwjf.org/en/about-rwjf/our-mission/our-founder.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/about/history\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/about-rwjf/our-mission/our-history.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/applications/index\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/applications/faqlist\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/faqs.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/applications/solicited/faqlist\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/grantee-resources.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/applications/solicited/grantlist\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/find-rwjf-grants.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/applications/solicited/npo\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/national-program-offices.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/applications/solicited/solicitedgrants\.jhtml$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/calls-for-proposals.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/applications/solicited/solicitedgrants\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/calls-for-proposals.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/applications/solicited/cfplist\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/calls-for-proposals.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/applications/solicited/upcomingcfplist\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/calls-for-proposals.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/applications/unsolicited/briefproposal\.jhtml$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/unsolicited-proposals.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/applications/unsolicited/briefproposal\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/unsolicited-proposals.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/applications/unsolicited/contact\.jhtml$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/unsolicited-proposals.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/applications/unsolicited/contact\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/unsolicited-proposals.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/applications/unsolicited/faqlist\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/faqs.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/applications/unsolicited/fullproposal\.jhtml$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/unsolicited-proposals.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/applications/unsolicited/fullproposal\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/unsolicited-proposals.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/applications/unsolicited/howtoapply\.jhtml$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/unsolicited-proposals.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/applications/unsolicited/howtoapply\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/unsolicited-proposals.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/applications/unsolicited/process\.jhtml$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/unsolicited-proposals.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/applications/unsolicited/process\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/unsolicited-proposals.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/applications/unsolicited/reviewprocess\.jhtml$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/unsolicited-proposals.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/applications/unsolicited/reviewprocess\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/unsolicited-proposals.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/applications/unsolicited/reviewproposal\.jhtml$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/unsolicited-proposals.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/applications/unsolicited/reviewproposal\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/unsolicited-proposals.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/applications/unsolicited/unsolicitedgrants\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/calls-for-proposals.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/applications/whatwedontfund\.jhtml$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/what-we-fund/what-we-don-t-fund.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/applications/whatwedontfund\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/what-we-fund/what-we-don-t-fund.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/applications/whatwefund\.jhtml$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/what-we-fund.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/applications/whatwefund\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/what-we-fund.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/applying/?$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/childhoodobesity/?$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/our-work.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/childhoodobesity/challenge\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/our-work.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/childhoodobesity/fundingops\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/what-we-fund.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/childhoodobesity/index\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/our-work.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/childhoodobesity/newsroom\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/about-rwjf/newsroom.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/childhoodobesity/pg\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/our-work.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/childhoodobesity/publications\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/our-work.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/childhoodobesity/strategy\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/our-work.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/childhoodobesity/team\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/about-rwjf/leadership-staff.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/common/jslib/npo/_numeric_\.js$ 
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/common/jslib/npo/_numeric_.js [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/common/jslib/npo/s_code\.js$ 
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/common/jslib/npo/s_code.js [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/common/jslib/npo/omniWidgetNPO\.js$ 
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/common/jslib/npo/omniWidgetNPO.js [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/coverage/?$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/our-work.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/coverage/fundingops\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/what-we-fund.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/coverage/index\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/our-work.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/coverage/key\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/our-work.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/coverage/newsroom\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/about-rwjf/newsroom.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/coverage/pg\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/our-work.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/coverage/publications\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/our-work.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/coverage/strategy\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/our-work.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/coverage/team\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/about-rwjf/leadership-staff.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/global/contactus\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/contact-rwjf.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/global/rss\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/rss.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/global/help\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/contact-rwjf.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/global/index\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/contact-rwjf.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/global/signinThanks\.jsp$ 
+RewriteRule ^(.*)$ http://my.rwjf.org/login.do.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/global/unsubscribe\.jsp$ 
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/global/unsubscribe.jsp [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/grantee/?$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/grantee-resources.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/grantees/?$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/grantee-resources.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/grantees/annualgrantreporting\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/grantee-resources/reporting-and-accounting-information.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/grantees/budgetreporting\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/grantee-resources/reporting-and-accounting-information.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/grantees/connect/?$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/grantee-resources/connect-project.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/grantees/connect/about\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/grantee-resources/connect-project.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/grantees/connect/contactus\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/grantee-resources/connect-project.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/grantees/connect/index\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/grantee-resources/connect-project.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/grantees/connect/resources\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/grantee-resources/connect-project.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/grantees/expenditure\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/grantee-resources/reporting-and-accounting-information.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/grantees/faqlist\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/grantee-resources/faq.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/grantees/faqlist\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/grantee-resources/grantee-faqs.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/grantees/finalgrantreporting\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/grantee-resources.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/grantees/formslist\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/grantee-resources.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/grantees/grantproducts\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/grantee-resources/reporting-and-accounting-information.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/grantees/grantreporting\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/grantee-resources/reporting-and-accounting-information.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/grantees/howtotools/?$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/grantee-resources.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/grantees/howtotools/communitytoolbox\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/grantee-resources.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/grantees/index\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/grantee-resources.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/grantees/instructionslist\.jsp$  
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/grantee-resources/reporting-and-accounting-information/instructions.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/grantees/nporeporting\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/grantee-resources/reporting-and-accounting-information.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/grantees/policies/communications\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/grantee-resources/legal-and-policy-information/communications-information.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/grantees/policies/index\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/grantee-resources/connect-project.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/grantees/policies/legal\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/grantee-resources/legal-and-policy-information.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/grantees/policies/logo\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/grantee-resources/legal-and-policy-information/rwjf-logo-usage.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/grantees/policies/other\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/grantee-resources.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/grantees/policies/travel\.jsp$
+RewriteRule ^(.*)$ "https://www.rwjf.org/content/dam/files/rwjf-web-files/GranteeResources/Travelpolicy for Service Providers.pdf" [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/grantees/projectchanges\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/grantee-resources/reporting-and-accounting-information.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/grants/grantlist\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/find-rwjf-grants.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/grants/index\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/grants/npo\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/national-program-offices.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/grants/npooverview\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/national-program-offices.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/grants/pg\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/healthpolicy/?$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/topics/rwjf-topic-areas/health-policy.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/healthpolicy/mustreads/index\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/topics/rwjf-topic-areas/health-policy.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/healthpolicy/publications\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/topics/rwjf-topic-areas/health-policy.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/healthpolicy/topic\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/topics/rwjf-topic-areas/health-policy.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/healthreform/product\.jsp$
+RewriteRule ^(.*)$ https://www.rwjf.org/en/topics/rwjf-topic-areas/health-policy.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/healthreform/topic\.jsp$
+RewriteRule ^(.*)$ https://www.rwjf.org/en/topics/rwjf-topic-areas/health-policy.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/humancapital/?$
+RewriteRule ^(.*)$ https://www.rwjf.org/en/our-work.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/humancapital/emaillist\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/our-work.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/humancapital/fundingops\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/what-we-fund.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/humancapital/index\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/our-work.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/humancapital/newsroom\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/about-rwjf/newsroom.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/humancapital/pg\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/humancapital/publications\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/our-work.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/humancapital/team\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/about-rwjf/leadership-staff.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/news/?$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/about-rwjf/newsroom.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/newsroom/?$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/about-rwjf/newsroom.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/newsroom/highlights\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/about-rwjf/newsroom/news-releases.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/newsroom/media\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/contact-rwjf.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/newsroom/newsletterlist\.jsp$ 
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/about/newsletterlist.jsp [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/newsroom/newsreleaseslist\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/about-rwjf/newsroom/news-releases.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/newsroom/profiledetail\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/our-work.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/npolist\.jsp$
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/national-program-offices.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/patterson/?$
+RewriteRule ^(.*)$ https://www.rwjf.org/en/about-rwjf/newsroom/features-and-articles/steve-patterson.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/pioneer/?$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/our-work.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/pioneer/fundingops\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/what-we-fund.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/pioneer/grants/faqlist\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/our-work.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/pioneer/grants/howtoapply\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/what-we-fund.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/pioneer/grants/reviewprocess\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/what-we-fund.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/pioneer/index\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/our-work.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/pioneer/key\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/our-work.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/pioneer/newsroom\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/about-rwjf/newsroom.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/pioneer/pg\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/pioneer/publications\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/our-work.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/pioneer/strategy\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/our-work.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/pioneer/submission\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/what-we-fund.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/pioneer/team\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/about-rwjf/leadership-staff.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/policies/copyrights\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/terms-and-conditions.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/policies/index\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/terms-and-conditions.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/policies/privacy\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/privacy.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/policies/trademarks\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/terms-and-conditions.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/portfolios/?$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/our-work.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/portfolios/features/profiledetail\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/our-work.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/portfolios/interestarea\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/our-work.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/portfolios/pioneer/interestarea\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/our-work.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/pr/?$
+RewriteRule ^(.*)$ https://www.rwjf.org/en/research-publications.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/pr/anthology\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/research-publications/assessing-our-impact/rwjf-anthologies.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/pr/datacollections\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/research-publications/data-center.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/pr/expect\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/content/rwjf/en/research-publications/find-rwjf-research/2009/11/what-grantees-can-expect-from-evaluation.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/pr/evalprojects\.jsp$  
+RewriteRule ^(.*)$ https://www.rwjf.org/en/our-work.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/pr/evalstandards\.jsp$  
+RewriteRule ^(.*)$ https://www.rwjf.org/en/our-work.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/pr/evaltools\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/toolkits.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/pr/evaluationlist\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/research-publications/assessing-our-impact/evaluations.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/pr/evaluations\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/research-publications/assessing-our-impact/evaluations.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/pr/grr\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/research-publications/assessing-our-impact/program-results.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/pr/index\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/research-publications.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/pr/renewsletterlist\.jsp$ 
+RewriteRule ^(.*)$ http://pweb1.rwjf.org/pr/renewsletterlist.jsp [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/pr/poll\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/research-publications/find-rwjf-research/2012/01/2011-the-year-in-research.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/pr/projects/$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/research-publications.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/pr/resapproach\.jsp$  
+RewriteRule ^(.*)$ https://www.rwjf.org/en/our-work.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/pr/research\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/research-publications.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/pr/resinitiatives\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/research-publications.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/pr/resprojects\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/research-publications.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/pr/resresults\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/research-publications.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/pr/resteam\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/about-rwjf/leadership-staff.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/pr/search\.jsp$
+RewriteRule ^(.*)$ https://www.rwjf.org/en/research-publications/find-rwjf-research.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/pr/slide\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/toolkits.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/pr/strategy/$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/research-publications.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/pr/synthesis\.jhtml$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/research-publications/find-rwjf-research.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/pr/synthesis\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/research-publications/find-rwjf-research.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/pr/synthesis/about_the_project/index.html$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/research-publications/find-rwjf-research.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/pr/synthesis/contact_us/index.html$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/research-publications/find-rwjf-research.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/pr/synthesis/contact\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/research-publications/find-rwjf-research.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/pr/synthesis/index.html$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/research-publications/find-rwjf-research.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/pr/synthesis/index\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/research-publications/find-rwjf-research.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/pr/synthesis/reports_and_briefs/index.html$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/research-publications/find-rwjf-research.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/pr/synthesis/reports_and_briefs/request.html$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/research-publications/find-rwjf-research.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/pr/synthesisabout\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/research-publications/find-rwjf-research.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/pr/topic\.jsp$
+RewriteRule ^(.*)$ https://www.rwjf.org/en/topics.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/pr/topiclist\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/topics.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/pr/type\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/research-publications.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/pr/typelist\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/research-publications/find-rwjf-research.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/programareas/?$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/our-work.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/programareas/features/?$
+RewriteRule ^(.*)$ https://www.rwjf.org/en/about-rwjf/newsroom/features-and-articles.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/programareas/index\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/our-work.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/programareas/npolist\.jsp$
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/national-program-offices.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/programareas/pioneer/?$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/our-work.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/programareas/programarea\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/our-work.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/programareas/resources/product\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/our-work.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/programareas/whatwedontfund\.html$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/what-we-fund/what-we-don-t-fund.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/programareas/whatwedontfund\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/what-we-fund/what-we-don-t-fund.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/programresults/?$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/research-publications/assessing-our-impact/program-results.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/programs/?$
+RewriteRule ^(.*)$ https://www.rwjf.org/en/about-rwjf/newsroom.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/publications/?$
+RewriteRule ^(.*)$ https://www.rwjf.org/en/research-publications.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/publications/annualgrantreporting\.jhtml$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/grantee-resources.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/publications/communitytoolbox\.jhtml$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/grantee-resources.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/publications/connect$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/grantee-resources/connect-project.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/publications/faqlist\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/grantee-resources/grantee-faqs.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/publications/finalgrantreporting\.jhtml$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/grantee-resources.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/publications/formslist\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/grantee-resources.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/publications/grantreporting\.jhtml$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/grantee-resources.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/publications/howtotools$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/grantee-resources.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/publichealth/?$
+RewriteRule ^(.*)$ https://www.rwjf.org/en/our-work.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/publichealth/challenge\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/our-work.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/publichealth/fundingops\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/what-we-fund.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/publichealth/index\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/our-work.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/publichealth/newsroom\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/about-rwjf/newsroom.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/publichealth/pg\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/what-we-fund.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/publichealth/publications\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/our-work.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/publichealth/strategy\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/our-work.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/publichealth/team\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/about-rwjf/leadership-staff.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/qualityequality/?$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/our-work.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/qualityequality/af4q/?$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/our-work.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/qualityequality/af4q/index\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/our-work.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/qualityequality/approach\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/what-we-fund.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/qualityequality/challenge\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/our-work.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/qualityequality/fundingops\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/what-we-fund.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/qualityequality/glossary\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/our-work.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/qualityequality/index\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/our-work.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/qualityequality/key\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/qualityequality/newsroom\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/about-rwjf/newsroom.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/qualityequality/pg\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/qualityequality/pp\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/our-work.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/qualityequality/publications\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/our-work.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/qualityequality/strategy\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/our-work.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/research/?$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/research-publications.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/research/projects$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/research-publications.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/research/strategy$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/research-publications/how-we-work.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/search/gsa/search\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/search-results.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/search/search\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/search-results.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/services/?$ 
+RewriteRule ^(.*)$ http://my.rwjf.org/myPortal.do [R=301,L]
+
+
+RedirectMatch  303 ^/video/index\.jsp$  https://www.rwjf.org/en/about-rwjf/newsroom/video.html
+RewriteCond %{REQUEST_URI} ^/vulnerablepopulations/?$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/our-work.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/vulnerablepopulations/challenge\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/our-work.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/vulnerablepopulations/fundingops\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/what-we-fund.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/vulnerablepopulations/index\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/our-work.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/vulnerablepopulations/key\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/our-work.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/vulnerablepopulations/newsroom\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/about-rwjf/newsroom.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/vulnerablepopulations/pg\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/vulnerablepopulations/publications\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/our-work.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/vulnerablepopulations/strategy\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/our-work.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/vulnerablepopulations/team\.jsp$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/about-rwjf/leadership-staff.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/files/guidelinesforpollsandsurveys\.pdf$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/research-publications/find-rwjf-research/2012/07/robert-wood-johnson-foundation-survey-guidelines.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/files/pollsandsurveysfaqs\.pdf$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/research-publications/find-rwjf-research/2012/07/robert-wood-johnson-foundation-survey-guidelines.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/files/publications/Payment-Models\.pdf$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/content/dam/files/rwjf-web-files/GranteeResources/Payment-Models.pdf [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/files/publications/RWJF_ContractBudgetFactChart\.pdf$
+RewriteRule ^(.*)$ https://www.rwjf.org/content/dam/files/rwjf-web-files/GranteeResources/RWJF_ContractBudgetFactChart.pdf [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/files/publications/RWJF_PlanningAMeeting\.pdf$
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/grantee-resources/legal-and-policy-information/travel.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/grantees/howtotools/meeting\.jsp$
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/grantee-resources/legal-and-policy-information/travel.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/files/publications/Payment-Models\.pdf$
+RewriteRule ^(.*)$ https://www.rwjf.org/content/dam/files/rwjf-web-files/GranteeResources/Payment-Models.pdf [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/files/publications/RWJF_ContractualAgreements\.pdf$
+RewriteRule ^(.*)$ https://www.rwjf.org/content/dam/files/rwjf-web-files/GranteeResources/RWJF_ContractualAgreements.pdf [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/files/publications/RWJF_BudgetRevisionGuidelines\.pdf$
+RewriteRule ^(.*)$ https://www.rwjf.org/content/dam/files/rwjf-web-files/GranteeResources/RWJF_BudgetRevisionGuidelines.pdf [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/files/publications/RWJF_ExtensionAward\.pdf
+RewriteRule ^(.*)$ https://www.rwjf.org/content/dam/files/rwjf-web-files/GranteeResources/RWJF_ExtensionAward.pdf [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/files/publications/RWJF_ExtensionDueDates\.pdf$
+RewriteRule ^(.*)$ https://www.rwjf.org/content/dam/files/rwjf-web-files/GranteeResources/RWJF_ExtensionDueDates.pdf [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/files/publications/Transfer-Grants-Guidelines-July-2009\.pdf$
+RewriteRule ^(.*)$ https://www.rwjf.org/content/dam/files/rwjf-web-files/GranteeResources/Transfer-Grants-Guidelines-July-2009.pdf [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/files/publications/RWJF_PrivateFoundationAdditionalReport\.pdf$
+RewriteRule ^(.*)$ https://www.rwjf.org/content/dam/files/rwjf-web-files/GranteeResources/RWJF_PrivateFoundationAdditionalReport.pdf [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/files/publications/RWJF_GrantIncomeERReport\.pdf$
+RewriteRule ^(.*)$ https://www.rwjf.org/content/dam/files/rwjf-web-files/GranteeResources/RWJF_GrantIncomeERReport.pdf [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/files/publications/RWJF_FinancialGuidelinesReporting\.pdf
+RewriteRule ^(.*)$ https://www.rwjf.org/content/dam/files/rwjf-web-files/GranteeResources/RWJF_FinancialGuidelinesReporting.pdf [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/files/publications/RWJF_ElectronicSubmissions\.pdf$
+RewriteRule ^(.*)$ https://www.rwjf.org/content/dam/files/rwjf-web-files/GranteeResources/RWJF_ElectronicSubmissions.pdf [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/files/publications/ProductUpdateForm\.doc$
+RewriteRule ^(.*)$ https://www.rwjf.org/content/dam/files/rwjf-web-files/GranteeResources/ProductUpdateForm.doc [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/files/publications/RWJF_GranteeReportingInstructions\.pdf$
+RewriteRule ^(.*)$ https://www.rwjf.org/content/dam/files/rwjf-web-files/GranteeResources/RWJF_GranteeReportingInstructions.pdf [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/files/publications/RWJF_BudgetRevisionGuidelinesUnder500k\.pdf$
+RewriteRule ^(.*)$ https://www.rwjf.org/content/dam/files/rwjf-web-files/GranteeResources/RWJF_BudgetRevisionGuidelinesUnder500k.pdf [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/files/publications/other/HealthySchools\.pdf$
+RewriteRule ^(.*)$ https://www.rwjf.org/en/research-publications/find-rwjf-research/2003/01/healthy-schools-for-healthy-kids.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/files/applications/RWJF_ExemptLOA\.pdf$
+RewriteRule ^(.*)$ https://www.rwjf.org/content/dam/files/rwjf-web-files/GranteeResources/RWJF_ExemptLOA.pdf [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/files/applications/RWJF_PrivateLOA\.pdf$
+RewriteRule ^(.*)$ https://www.rwjf.org/content/dam/files/rwjf-web-files/GranteeResources/RWJF_PrivateLOA.pdf [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/files/applications/RWJF_Private_opfndLOA\.pdf$
+RewriteRule ^(.*)$ https://www.rwjf.org/content/dam/files/rwjf-web-files/GranteeResources/RWJF_Private_opfndLOA.pdf [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/files/applications/RWJF_NonExemptLOA\.pdf$
+RewriteRule ^(.*)$ https://www.rwjf.org/content/dam/files/rwjf-web-files/GranteeResources/RWJF_NonExemptLOA.pdf [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/files/research/10[\s]Health[\s]Impact[\s]Assessment[\s]Issue[\s]Brief\.pdf$
+RewriteRule ^(.*)$ https://www.rwjf.org/content/rwjf/en/research-publications/find-rwjf-research/2011/06/what-shapes-health/health-impact-assessment.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/files/research/cnf14\.pdf$
+RewriteRule ^(.*)$ https://www.rwjf.org/en/research-publications/find-rwjf-research/2009/01/charting-nursings-future-archives/unlocking-the-potential-of-school-nursing.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/files/research/Future[\s]of[\s]Nursing_Leading[\s]Change[\s]Advancing[\s]Health\.pdf$
+RewriteRule ^(.*)$ https://www.rwjf.org/en/research-publications/find-rwjf-research/2010/10/the-future-of-nursing.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/files/research/cnf201108\.pdf$
+RewriteRule ^(.*)$ https://www.rwjf.org/en/research-publications/find-rwjf-research/2009/01/charting-nursings-future-archives/how-to-dramatically-increase-the-formal-education-of-america-s-n.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/files/publications/other/wisdomatwork\.pdf$
+RewriteRule ^(.*)$ https://www.rwjf.org/en/research-publications/find-rwjf-research/2006/06/wisdom-at-work-.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/files/research/20100608cnf\.pdf$
+RewriteRule ^(.*)$ https://www.rwjf.org/en/research-publications/find-rwjf-research/2009/01/charting-nursings-future-archives/expanding-america-s-capacity-to-educate-nurses.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/files/research/cnf20120810\.pdf$
+RewriteRule ^(.*)$ https://www.rwjf.org/en/research-publications/find-rwjf-research/2009/01/charting-nursings-future-archives/issue-18--implementing-the-iom-future-of-nursing-reportpart-iii.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/files/research/20090508lhcactionstrategiestoolkit\.pdf$
+RewriteRule ^(.*)$ https://www.rwjf.org/en/research-publications/find-rwjf-research/2009/05/action-strategies-toolkit.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/files/research/20100629fasinfatmainreport\.pdf$
+RewriteRule ^(.*)$ https://www.rwjf.org/en/research-publications/find-rwjf-research/2010/06/f-as-in-fat-.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/files/research/20091203herssb\.pdf$
+RewriteRule ^(.*)$ https://www.rwjf.org/en/research-publications/find-rwjf-research/2009/11/the-negative-impact-of-sugar-sweetened-beverages-on-children-s-h.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/files/research/74166\.5785\.analysisofHSS\.2012\.april\.pdf$
+RewriteRule ^(.*)$ https://www.rwjf.org/en/research-publications/find-rwjf-research/2011/08/rwjf-provides-states-with-resources-to-expand-coverage/analysis-of-hhs-final-rules-on-reinsurance--risk-corridors-and-r.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/files/research/70388\.pdf$
+RewriteRule ^(.*)$ https://www.rwjf.org/en/research-publications/find-rwjf-research/2010/09/health-insurance-exchanges.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/files/research/71555\.pdf$
+RewriteRule ^(.*)$ https://www.rwjf.org/en/research-publications/find-rwjf-research/2010/12/america-under-the-affordable-care-act.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/files/research/72105massutah201103\.pdf$
+RewriteRule ^(.*)$ https://www.rwjf.org/en/research-publications/find-rwjf-research/2011/03/the-massachusetts-and-utah-health-insurance-exchanges.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/yla/?$ 
+RewriteRule ^(.*)$ https://www.rwjf.org/en/about-rwjf/40th-anniversary.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/files/?$
+RewriteRule ^(.*)$ https://www.rwjf.org/en.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/files/research/?$
+RewriteRule ^(.*)$ https://www.rwjf.org/en/research-publications.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/files/publications/?$
+RewriteRule ^(.*)$ https://www.rwjf.org/en/research-publications.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/applications/?$
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/calls-for-proposals.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/cfp/?$
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/calls-for-proposals.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/reports/?$
+RewriteRule ^(.*)$ https://www.rwjf.org/en/research-publications/find-rwjf-research.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/portfolios/features/?$
+RewriteRule ^(.*)$ https://www.rwjf.org/en/about-rwjf/newsroom/features-and-articles.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/files/applications/cfp/cfp_enf2011_12\.pdf$
+RewriteRule ^(.*)$ /en/grants/calls-for-proposals/archive.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/files/newsroom/profiles/?$
+RewriteRule ^(.*)$ https://www.rwjf.org/en/about-rwjf/newsroom/features-and-articles.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/files/publications/books/?$
+RewriteRule ^(.*)$ https://www.rwjf.org/en/research-publications/find-rwjf-research.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/files/publications/other/SubstanceAbuseChartbook\.pdf$
+RewriteRule ^(.*)$ https://www.rwjf.org/en/research-publications/find-rwjf-research/2001/02/substance-abuse.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/files/research/vpmessageguide20101029\.pdf
+RewriteRule ^(.*)$ https://www.rwjf.org/en/research-publications/find-rwjf-research/2010/01/a-new-way-to-talk-about-the-social-determinants-of-health.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/files/research/RWJFPhysiciansSurveyExecutiveSummary\.pdf
+RewriteRule ^(.*)$ https://www.rwjf.org/en/research-publications/find-rwjf-research/2011/12/health-care-s-blind-side.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/files/research/sports4kidsrecessreport\.pdf
+RewriteRule ^(.*)$ https://www.rwjf.org/en/research-publications/find-rwjf-research/2007/09/recess-rules.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/files/research/stateofplayrecessreportgallup\.pdf
+RewriteRule ^(.*)$ https://www.rwjf.org/en/research-publications/find-rwjf-research/2010/02/the-state-of-play.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/files/research/74400\.5885\.thefactshurt\.20120521\.pdf$
+RewriteRule ^(.*)$ https://www.rwjf.org/en/research-publications/find-rwjf-research/2013/01/the-facts-hurt.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/files/research/obstaclestohealth\.pdf$
+RewriteRule ^(.*)$ https://www.rwjf.org/en/research-publications/find-rwjf-research/2008/02/overcoming-obstacles-to-health.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/files/research/72267report\.pdf$
+RewriteRule ^(.*)$ https://www.rwjf.org/en/research-publications/find-rwjf-research/2011/01/ranking-the-risks.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/files/research/commission2009finalreport\.pdf$
+RewriteRule ^(.*)$ https://www.rwjf.org/en/research-publications/find-rwjf-research/2009/04/beyond-health-care.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/files/research/101508\.policysynthesis\.costdrivers\.rpt\.pdf$
+RewriteRule ^(.*)$ https://www.rwjf.org/en/research-publications/find-rwjf-research/2008/10/high-and-rising-health-care-costs.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/files/research/021011\.policysynthesis\.mentalhealth\.report\.pdf$
+RewriteRule ^(.*)$ https://www.rwjf.org/en/research-publications/find-rwjf-research/2011/02/mental-disorders-and-medical-comorbidity.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/files/research/032008researchbriefno\.3final\.pdf$
+RewriteRule ^(.*)$ https://www.rwjf.org/en/research-publications/find-rwjf-research/2008/03/the-role-of-nurses-in-hospital-quality-improvement.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/files/research/62209hcfopublicperspectivesbrief\.pdf$
+RewriteRule ^(.*)$ https://www.rwjf.org/en/research-publications/find-rwjf-research/2009/01/public-perspectives-on-health-delivery-system-reforms.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/files/research/5973\.74582\.synthesisprojectupdate\.hospitalconsolidation\.pdf$
+RewriteRule ^(.*)$ https://www.rwjf.org/en/research-publications/find-rwjf-research/2012/06/the-impact-of-hospital-consolidation.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/files/research/67188costs\.pdf$
+RewriteRule ^(.*)$ https://www.rwjf.org/en/research-publications/find-rwjf-research/2010/08/how-will-reform-affect-health-care-costs.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/files/research/74010\.5713\.georgetown\.wellness\.revised\.final\.pdf$
+RewriteRule ^(.*)$ https://www.rwjf.org/en/research-publications/find-rwjf-research/2012/02/premium-incentives-to-drive-wellness-in-the-workplace.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/files/research/6103\.mmc\.report\.0812\.pdf$
+RewriteRule ^(.*)$ https://www.rwjf.org/en/research-publications/find-rwjf-research/2012/09/medicaid-managed-care--costs--access--and-quality-of-care.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/files/research/73633\.sentara\.healthcare\.pdf$
+RewriteRule ^(.*)$ /en/research-publications/find-rwjf-research/2010/09/a-case-study-series-on-disruptive-innovations-within-integrated-/sentara-healthcare.html [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^(/content/rwjf)/en/about-rwjf/newsroom/video/vision-video\.html$
+RewriteRule ^(.*)$ https://www.youtube.com/watch?v=rs4QSF6mxug [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/content/rwjf/en/about-rwjf/newsroom/video\.html$
+RewriteRule ^(.*)$ https://www.youtube.com/user/rwjfvideo [R=301,L]
+
+
+
+
+RewriteCond %{REQUEST_URI}  ^/programareas/pioneer/programarea\.jsp$
+RewriteCond %{QUERY_STRING} ^pid=1140$
+RewriteRule ^(.*)$ https://www.rwjf.org/en/our-work.html? [R=301,L]
+
+RewriteCond %{HTTP_HOST}  ^(www\.)?rwjf.org$
+RewriteCond %{REQUEST_URI}  ^/search/?$
+RewriteRule ^(.*)$ https://www.rwjf.org/en/search-results.html? [R=301,L]
+
+RewriteCond %{REQUEST_URI}  ^/about/staffbio\.jsp$
+RewriteCond %{QUERY_STRING} ^id=935$
+RewriteRule ^(.*)$ https://www.rwjf.org/en/about-rwjf/leadership-staff/L/john-r-lumpkin-m-d-mph.html? [R=301,L]
+
+RewriteCond %{REQUEST_URI}  ^/pr/topic\.jsp$
+RewriteCond %{QUERY_STRING} ^topicid=1318$
+RewriteRule ^(.*)$ https://www.rwjf.org/en/topics/rwjf-topic-areas/nursing.html? [R=301,L]
+
+RewriteCond %{REQUEST_URI}  ^/pr/product\.jsp$
+RewriteCond %{QUERY_STRING} ^id=71905$
+RewriteRule ^(.*)$ https://www.rwjf.org/en/grants/grantees/project-echo.html? [R=301,L]
+
+RewriteCond %{HTTP_HOST}  ^community.rwjf.org$
+RewriteRule ^/?$ https://www.rwjf.org/en/community.html? [R=301,L]
+
+RewriteCond %{HTTP_HOST}  ^rwjfalumninetwork.org$
+RewriteRule ^(.*)$ https://www.rwjf.org/en/our-work.html? [R=301,L]
+
+RewriteCond %{HTTP_HOST}  ^hcgranteenetwork.rwjf.org$
+RewriteRule ^(.*)$ https://www.rwjf.org/en/our-work.html? [R=301,L]
+
+RewriteCond %{HTTP_HOST}  ^community.rwjf.org$
+RewriteRule ^/?community/alumni_home$ https://www.rwjf.org/en/our-work.html? [R=301,L]
+
+RewriteCond %{HTTP_HOST}  ^community.rwjf.org$
+RewriteRule ^/?community/rwjf_human_capital_grantee_network_home$ https://www.rwjf.org/en/our-work.html? [R=301,L]
+
+RewriteCond %{HTTP_HOST}  ^community.rwjf.org$
+RewriteRule ^/?community/forwardpromise$ https://www.rwjf.org/en/grants/grantees/forward-promise.html? [R=301,L]
+
+RewriteCond %{HTTP_HOST}  ^community.rwjf.org$
+RewriteRule ^/?docs/DOC-2101$ https://www.rwjf.org/en/grants/grantees/forward-promise/forward-promise--updates-and-news.html? [R=301,L]
+
+RewriteCond %{HTTP_HOST}  ^community.rwjf.org$
+RewriteRule ^/?docs/DOC-2576$ https://www.rwjf.org/en/grants/grantees/forward-promise/forward-promise--updates-and-news.html? [R=301,L]
+
+RewriteCond %{HTTP_HOST}  ^community.rwjf.org$
+RewriteRule ^/?docs/DOC-3841$ https://www.rwjf.org/en/grants/grantees/forward-promise/forward-promise-advisory-committee-members.html? [R=301,L]
+
+RewriteCond %{HTTP_HOST}  ^community.rwjf.org$
+RewriteRule ^/?docs/DOC-2541$ https://www.rwjf.org/en/grants/grantees/forward-promise/opening-remarks--gathering-of-leaders--june-2012-.html? [R=301,L]
+
+RewriteCond %{HTTP_HOST}  ^community.rwjf.org$
+RewriteCond %{QUERY_STRING} ^tstart=30$
+RewriteRule ^/?thread/1915$ https://www.rwjf.org/en/about-rwjf/newsroom/newsroom-content/2012/05/following-up-on-the-Forward-Promise-Call-for-Ideas.html? [R=301,L]
+
+RewriteCond %{HTTP_HOST}  ^community.rwjf.org$
+RewriteCond %{QUERY_STRING} ^tstart=30$
+RewriteRule ^/?thread/1931$ https://www.rwjf.org/en/about-rwjf/newsroom/newsroom-content/2012/06/a-gathering-of-leaders.html? [R=301,L]
+
+RewriteCond %{HTTP_HOST}  ^community.rwjf.org$
+RewriteCond %{QUERY_STRING} ^tstart=30$
+RewriteRule ^/?thread/1952$ https://www.rwjf.org/en/about-rwjf/newsroom/newsroom-content/2012/07/recap-of-the-gathering-of-leaders--cultivating-connections---cha.html? [R=301,L]
+
+RewriteCond %{HTTP_HOST}  ^community.rwjf.org$
+RewriteCond %{QUERY_STRING} ^tstart=30$
+RewriteRule ^/?thread/1973$ https://www.rwjf.org/en/about-rwjf/newsroom/newsroom-content/2012/08/the-call-for-proposals-is-here-.html? [R=301,L]
+
+RewriteCond %{HTTP_HOST}  ^community.rwjf.org$
+RewriteCond %{QUERY_STRING} ^tstart=0$
+RewriteRule ^/?thread/2022$ https://www.rwjf.org/en/about-rwjf/newsroom/newsroom-content/2012/10/update--cfp-deadline--new-partners--and-reflection.html? [R=301,L]
+
+RewriteCond %{HTTP_HOST}  ^community.rwjf.org$
+RewriteCond %{QUERY_STRING} ^tstart=0$
+RewriteRule ^/?thread/2041$ https://www.rwjf.org/en/about-rwjf/newsroom/newsroom-content/2012/10/more-than-1-000-proposals-received---review-is-underway-.html? [R=301,L]
+
+RewriteCond %{HTTP_HOST}  ^community.rwjf.org$
+RewriteCond %{QUERY_STRING} ^tstart=0$
+RewriteRule ^/?thread/2531$ https://www.rwjf.org/en/about-rwjf/newsroom/newsroom-content/2013/02/new-policy-brief-and-update-on-forward-promise.html? [R=301,L]
+
+RewriteRule ^/?content/rwjf/en/grants/national-program-offices(.*)$ https://www.rwjf.org/en/library/programs-and-initiatives$1 [R=301,L]
+RewriteRule ^/?content/rwjf/en/grants/calls-for-proposals(.*)$ https://www.rwjf.org/en/grants/funding-opportunities$1 [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^/\\+$
+RewriteRule ^(.*)$ https://plus.google.com/103967375144645459237/posts [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/google\\+$
+RewriteRule ^(.*)$ https://plus.google.com/103967375144645459237/posts [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/googleplus$
+RewriteRule ^(.*)$ https://plus.google.com/103967375144645459237/posts [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/at40$
+RewriteRule ^(.*)$ https://www.rwjf.org/at40.html [R=301,L]
+
+
+
+RewriteCond %{HTTP_HOST} ^pweb1.rwjf.org$
+RewriteRule ^/?images/newsroom/Hendersons\[1\]\.jpg https://www.rwjf.org/content/dam/legacy/images/newsroom/Hendersons-1-.jpg [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^pweb1.rwjf.org$
+RewriteRule ^/?images/newsroom/rwjfctuwbutton\[1\]\.gif https://www.rwjf.org/content/dam/legacy/images/newsroom/rwjfctuwbutton-1-.gif [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^pweb1.rwjf.org$
+RewriteRule ^/?images/pr/features/M2_831_Pg66_HiRes\[1\]\.jpg https://www.rwjf.org/content/dam/legacy/images/pr/features/M2_831_Pg66_HiRes-1-.jpg [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^pweb1.rwjf.org$
+RewriteRule ^/?images/pr/uploads/risa151x140for_trusteebio\[1\]\.jpg https://www.rwjf.org/content/dam/legacy/images/pr/uploads/risa151x140for_trusteebio-1-.jpg [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^pweb1.rwjf.org$
+RewriteRule ^/?images/cfp/m2/M2_DSC_0033\(20,12\)\.jpg https://www.rwjf.org/content/dam/legacy/images/cfp/m2/M2_DSC_0033-20-12-.jpg [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^pweb1.rwjf.org$
+RewriteRule ^/?images/cfp/m3/M3_DSC_0033\(20,12\)\.jpg https://www.rwjf.org/content/dam/legacy/images/cfp/m3/M3_DSC_0033-20-12-.jpg [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^pweb1.rwjf.org$
+RewriteRule ^/?images/(.*) https://www.rwjf.org/content/dam/legacy/images/$1 [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^pweb1.rwjf.org$
+RewriteRule ^/?common/(.*) https://www.rwjf.org/content/dam/legacy/common/$1 [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^pweb1.rwjf.org$
+RewriteRule ^/?files/publications/annual/2007\.1/(.*) https://www.rwjf.org/content/dam/legacy/files/publications/annual/20071/$1 [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^pweb1.rwjf.org$
+RewriteRule ^/?files/publications/Research\ Highlight\ 19\[6\]\.pdf https://www.rwjf.org/content/dam/legacy/files/publications/Research-Highlight-19-6-.pdf [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^pweb1.rwjf.org$
+RewriteRule ^/?files/publications/Research\ Highlight\ 29\[4\]\.pdf https://www.rwjf.org/content/dam/legacy/files/publications/Research-Highlight-29-4-.pdf [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^pweb1.rwjf.org$
+RewriteRule ^/?files/publications/other/Research\ Highlight\ 26\[4\]\.pdf https://www.rwjf.org/content/dam/legacy/files/publications/other/Research-Highlight-26-4-.pdf [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^pweb1.rwjf.org$
+RewriteRule ^/?files/publications/other/Research\ Brief\ 2\[5\]\.pdf https://www.rwjf.org/content/dam/legacy/files/publications/other/Research-Brief-2-5-.pdf [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^pweb1.rwjf.org$
+RewriteRule ^/?files/publications/other/Research\ Brief\ 3\[2\]\.pdf https://www.rwjf.org/content/dam/legacy/files/publications/other/Research-Brief-3-2-.pdf [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^pweb1.rwjf.org$
+RewriteRule ^/?files/publications/other/Research\ Brief\ 5\[7\]\.pdf https://www.rwjf.org/content/dam/legacy/files/publications/other/Research-Brief-5-7-.pdf [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^pweb1.rwjf.org$
+RewriteRule ^/?files/publications/other/Research\ Highlight\ 21\[6\]\.pdf https://www.rwjf.org/content/dam/legacy/files/publications/other/Research-Highlight-21-6-.pdf [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^pweb1.rwjf.org$
+RewriteRule ^/?files/publications/other/Research\ 02\ Brief\ 2003\[2\ -\ pb\ edits\]\.pdf https://www.rwjf.org/content/dam/legacy/files/publications/other/Research-02-Brief-2003-2---pb-edits-.pdf [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^pweb1.rwjf.org$
+RewriteRule ^/?files/publications/other/Research\ Brief\ 2\[3\]\.pdf https://www.rwjf.org/content/dam/legacy/files/publications/other/Research-Brief-2-3-.pdf [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^pweb1.rwjf.org$
+RewriteRule ^/?files/publications/other/Research\ Highlight\ 20\[3\]\.pdf https://www.rwjf.org/content/dam/legacy/files/publications/other/Research-Highlight-20-3-.pdf [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^pweb1.rwjf.org$
+RewriteRule ^/?files/publications/other/Research\ Brief\ 5\[5\]\.pdf https://www.rwjf.org/content/dam/legacy/files/publications/other/Research-Brief-5-5-.pdf [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^pweb1.rwjf.org$
+RewriteRule ^/?files/publications/other/Research\ Highlight\ 24\[3\]\.pdf https://www.rwjf.org/content/dam/legacy/files/publications/other/Research-Highlight-24-3-.pdf [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^pweb1.rwjf.org$
+RewriteRule ^/?files/publications/other/Research\ 04\ Brief\ 2004\[2\ -\ pb\ edits\]\.pdf https://www.rwjf.org/content/dam/legacy/files/publications/other/Research-04-Brief-2004-2---pb-edits-.pdf [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^pweb1.rwjf.org$
+RewriteRule ^/?files/publications/other/Research\ Highlight\ 18\[5\]\.pdf https://www.rwjf.org/content/dam/legacy/files/publications/other/Research-Highlight-18-5-.pdf [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^pweb1.rwjf.org$
+RewriteRule ^/?files/publications/other/Research\ Brief\ 5\[6\]\.pdf https://www.rwjf.org/content/dam/legacy/files/publications/other/Research-Brief-5-6-.pdf [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^pweb1.rwjf.org$
+RewriteRule ^/?files/publications/other/Research\ Highlight\ 19\[6\]\.pdf https://www.rwjf.org/content/dam/legacy/files/publications/other/Research-Highlight-19-6-.pdf [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^pweb1.rwjf.org$
+RewriteRule ^/?files/publications/other/Research\ Brief\ 3\[6\]\.pdf https://www.rwjf.org/content/dam/legacy/files/publications/other/Research-Brief-3-6-.pdf [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^pweb1.rwjf.org$
+RewriteRule ^/?files/publications/other/IHITCABpaper\[1\]\.pdf https://www.rwjf.org/content/dam/legacy/files/publications/other/IHITCABpaper-1-.pdf [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^pweb1.rwjf.org$
+RewriteRule ^/?files/publications/other/Research\ Highlight\ 23\[4\]\.pdf https://www.rwjf.org/content/dam/legacy/files/publications/other/Research-Highlight-23-4-.pdf [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^pweb1.rwjf.org$
+RewriteRule ^/?files/publications/other/Research\ Brief\ 4\[5\]\.pdf https://www.rwjf.org/content/dam/legacy/files/publications/other/Research-Brief-4-5-.pdf [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^pweb1.rwjf.org$
+RewriteRule ^/?files/publications/other/Research\ Highlight19\[5\]\.pdf https://www.rwjf.org/content/dam/legacy/files/publications/other/Research-Highlight19-5-.pdf [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^pweb1.rwjf.org$
+RewriteRule ^/?files/publications/other/Research\ Highlight\ 20\[2\]\.pdf https://www.rwjf.org/content/dam/legacy/files/publications/other/Research-Highlight-20-2-.pdf [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^pweb1.rwjf.org$
+RewriteRule ^/?files/publications/other/Research\ 03\ Brief\ 2002\[2\ -\ pb\ edits\]\.pdf https://www.rwjf.org/content/dam/legacy/files/publications/other/Research-03-Brief-2002-2---pb-edits-.pdf [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^pweb1.rwjf.org$
+RewriteRule ^/?files/publications/other/Research\ Highlight\ 22\[2\]\.pdf https://www.rwjf.org/content/dam/legacy/files/publications/other/Research-Highlight-22-2-.pdf [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^pweb1.rwjf.org$
+RewriteRule ^/?files/researchold/Aiken,JAMA,Oct02,HospitalNurseStaffing\.pdf https://www.rwjf.org/content/dam/legacy/files/researchold/Aiken-JAMA-Oct02-HospitalNurseStaffing.pdf [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^pweb1.rwjf.org$
+RewriteRule ^/?files/researchold/Wicks\ &\ Hall,\ 78-4\.pdf https://www.rwjf.org/content/dam/legacy/files/researchold/Wicks-and-Hall--78-4.pdf [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^pweb1.rwjf.org$
+RewriteRule ^/?files/researchold/Clark,AJIC,June02,OrganizationalClimate\.pdf https://www.rwjf.org/content/dam/legacy/files/researchold/Clark-AJIC-June02-OrganizationalClimate.pdf [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^pweb1.rwjf.org$
+RewriteRule ^/?files/researchold/05\.09\.15\ Evaluation\ of\ the\ Center\ for\ Health\ Care\ Strategies\ Work\ on\ Medicaid\ Managed\ Care,\ Phase\ II\.pdf https://www.rwjf.org/content/dam/legacy/files/researchold/05.09.15-Evaluation-of-the-Center-for-Health-Care-Strategies-Work-on-Medicaid-Managed-Care--Phase-II.pdf [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^pweb1.rwjf.org$
+RewriteRule ^/?files/researchold/{Sustainability-report\ \(Revised\ 7-26-06\)\.pdf https://www.rwjf.org/content/dam/legacy/files/researchold/Sustainability-report--Revised-7-26-06-.pdf [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^pweb1.rwjf.org$
+RewriteRule ^/?files/researchold/splashcunningham\[1\]\.htm https://www.rwjf.org/content/dam/legacy/files/researchold/splashcunningham-1-.htm [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^pweb1.rwjf.org$
+RewriteRule ^/?files/researchold/Feldman\ &\ Kane,\ 81-2\.pdf https://www.rwjf.org/content/dam/legacy/files/researchold/Feldman-and-Kane--81-2.pdf [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^pweb1.rwjf.org$
+RewriteRule ^/?files/researchold/Casolino\ &\ Robinson,\ 81-2\.pdf https://www.rwjf.org/content/dam/legacy/files/researchold/Casolino-and-Robinson--81-2.pdf [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^pweb1.rwjf.org$
+RewriteRule ^/?files/researchold/Hall,\ 78-1\.pdf https://www.rwjf.org/content/dam/legacy/files/researchold/Hall--78-1.pdf [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^pweb1.rwjf.org$
+RewriteRule ^/?files/researchold/Glied,\ Remler\ &\ Zivin,\ 80-4\.pdf https://www.rwjf.org/content/dam/legacy/files/researchold/Glied--Remler-and-Zivin--80-4.pdf [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^pweb1.rwjf.org$
+RewriteRule ^/?files/research/How\ can\ the\ Healthy,\ Hunger-Free\ Kids\ Act\ make\ school\ foods\ healthier\ -\ Laid\ out\ in\ new\ template\.pdf https://www.rwjf.org/content/dam/legacy/files/research/How-can-the-Healthy--Hunger-Free-Kids-Act-make-school-foods-healthier---Laid-out-in-new-template.pdf [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^pweb1.rwjf.org$
+RewriteRule ^/?files/research/Research\ Highlight\ 33\ \[9\]\.pdf https://www.rwjf.org/content/dam/legacy/files/research/Research-Highlight-33--9-.pdf [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^pweb1.rwjf.org$
+RewriteRule ^/?files/research/Aiken,JAMA,Oct02,HospitalNurseStaffing\.pdf https://www.rwjf.org/content/dam/legacy/files/research/Aiken-JAMA-Oct02-HospitalNurseStaffing.pdf [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^pweb1.rwjf.org$
+RewriteRule ^/?files/research/Research\ Highlight\ 30\[8\]\.pdf https://www.rwjf.org/content/dam/legacy/files/research/Research-Highlight-30-8-.pdf [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^pweb1.rwjf.org$
+RewriteRule ^/?files/research/Research\ Highlight\ 34\[7\]\.pdf https://www.rwjf.org/content/dam/legacy/files/research/Research-Highlight-34-7-.pdf [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^pweb1.rwjf.org$
+RewriteRule ^/?files/research/McNall\ et\ al\.,\ 81-2\.pdf https://www.rwjf.org/content/dam/legacy/files/research/McNall-et-al.--81-2.pdf [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^pweb1.rwjf.org$
+RewriteRule ^/?files/research/Wicks\ &\ Hall,\ 78-4\.pdf https://www.rwjf.org/content/dam/legacy/files/research/Wicks-and-Hall--78-4.pdf [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^pweb1.rwjf.org$
+RewriteRule ^/?files/research/Clark,AJIC,June02,OrganizationalClimate\.pdf https://www.rwjf.org/content/dam/legacy/files/research/Clark-AJIC-June02-OrganizationalClimate.pdf [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^pweb1.rwjf.org$
+RewriteRule ^/?files/research/Research\ Highlight\ 33\[8\]\.pdf https://www.rwjf.org/content/dam/legacy/files/research/Research-Highlight-33-8-.pdf [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^pweb1.rwjf.org$
+RewriteRule ^/?files/research/Research\ Highlight\ 32\[5\]\.pdf https://www.rwjf.org/content/dam/legacy/files/research/Research-Highlight-32-5-.pdf [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^pweb1.rwjf.org$
+RewriteRule ^/?files/research/05\.09\.15\ Evaluation\ of\ the\ Center\ for\ Health\ Care\ Strategies\ Work\ on\ Medicaid\ Managed\ Care,\ Phase\ II\.pdf https://www.rwjf.org/content/dam/legacy/files/research/05.09.15-Evaluation-of-the-Center-for-Health-Care-Strategies-Work-on-Medicaid-Managed-Care--Phase-II.pdf [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^pweb1.rwjf.org$
+RewriteRule ^/?files/research/Research\ Highlight\ 33\[9\[\.pdf https://www.rwjf.org/content/dam/legacy/files/research/Research-Highlight-33-9-.pdf [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^pweb1.rwjf.org$
+RewriteRule ^/?files/research/05\.09\.15\ \ V2\ Evaluation\ of\ the\ Center\ for\ Health\ Care\ Strategies\ Work\ on\ Medicaid\ Managed\ Care,\ Phase\ II\.pdf https://www.rwjf.org/content/dam/legacy/files/research/05.09.15--V2-Evaluation-of-the-Center-for-Health-Care-Strategies-Work-on-Medicaid-Managed-Care--Phase-II.pdf [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^pweb1.rwjf.org$
+RewriteRule ^/?files/research/{Sustainability-report\ \(Revised\ 7-26-06\)\.pdf https://www.rwjf.org/content/dam/legacy/files/research/Sustainability-report--Revised-7-26-06-.pdf [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^pweb1.rwjf.org$
+RewriteRule ^/?files/research/splashcunningham\[1\]\.htm https://www.rwjf.org/content/dam/legacy/files/research/splashcunningham-1-.htm [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^pweb1.rwjf.org$
+RewriteRule ^/?files/research/Feldman\ &\ Kane,\ 81-2\.pdf https://www.rwjf.org/content/dam/legacy/files/research/Feldman-and-Kane--81-2.pdf [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^pweb1.rwjf.org$
+RewriteRule ^/?files/research/Casolino\ &\ Robinson,\ 81-2\.pdf https://www.rwjf.org/content/dam/legacy/files/research/Casolino-and-Robinson--81-2.pdf [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^pweb1.rwjf.org$
+RewriteRule ^/?files/research/Hall,\ 78-1\.pdf https://www.rwjf.org/content/dam/legacy/files/research/Hall--78-1.pdf [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^pweb1.rwjf.org$
+RewriteRule ^/?files/research/Glied,\ Remler\ &\ Zivin,\ 80-4\.pdf https://www.rwjf.org/content/dam/legacy/files/research/Glied--Remler-and-Zivin-80-4.pdf [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^pweb1.rwjf.org$
+RewriteRule ^/?files/(.*) https://www.rwjf.org/content/dam/legacy/files/$1 [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^pweb1.rwjf.org$
+RewriteRule ^(.*)$ https://www.rwjf.org [R=301,L]
+
+RewriteCond %{REQUEST_URI}  ^/pioneer/npo\.jsp$
+RewriteRule ^(.*)$ /en.html? [QSD,R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/content/dam/files/rwjf-web-files/GranteeResources/RWJF_ElectronicSubmissions.pdf
+RewriteRule ^(.*)$ /content/dam/files/rwjf-web-files/GranteeResources/Electronic_Submission_Standards.pdf [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/content/dam/files/rwjf-web-files/Research/2015/RWJF_From_Vision_to_Action_2015-FullReport.pdf
+RewriteRule ^(.*)$ /content/dam/COH/FromVisiontoActionMeasuresCompendium2016.pdf [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^/closehealthgaps
+RewriteRule ^(.*)$ http://www.societyhealth.vcu.edu/work/the-projects/mapping-life-expectancy.html [R=301,L]
+
+
+

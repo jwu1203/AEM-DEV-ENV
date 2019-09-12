@@ -1,0 +1,12 @@
+
+RewriteCond %{HTTP_HOST}  (coh|cultureofhealth)
+RewriteCond %{REQUEST_URI}  ^/?$
+RewriteRule  ^/?$ ${cohmap:%{HTTP_HOST}}/en/cultureofhealth.html [R=301,L]
+
+RewriteCond %{HTTP_HOST}  (coh|cultureofhealth)
+RewriteCond %{REQUEST_URI}  !^/en(.*)$
+RewriteRule (.*) ${cohmap:%{HTTP_HOST}}/en/cultureofhealth/$1 [R=301,L]
+
+RewriteCond %{HTTP_HOST}  (coh|cultureofhealth)
+RewriteCond %{REQUEST_URI} ^/?en/.+
+RewriteRule (^en/)(.*) ${cohmap:%{HTTP_HOST}}/en/cultureofhealth/$2 [R=301,L]

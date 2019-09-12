@@ -1,0 +1,117 @@
+####################################################################################
+####################RObert WOOD Additions#########################################
+# Deny everything first and then allow specific entries
+/0022 { /type "deny"  /glob "* /content/coh*" }
+
+/0023 { /type "allow" /glob "GET / *" } # allow root to pass, but only the root.
+/0024 { /type "allow" /glob "GET /index.html *" } # allow our default root page.
+/0028 { /type "allow" /glob "GET /feature_cards*" }
+/0031 { /type "allow" /glob "GET /images*" }
+/0032 { /type "allow" /glob "GET /jtemplates*" }
+/0033 { /type "allow" /glob "GET /xd_receiver.htm*" }
+/0034 { /type "allow" /glob "GET /preview*" }
+/0035 { /type "allow" /glob "GET /at40*" }
+/0036 { /type "allow" /glob "GET /futureofhealth*" }
+
+#/0040 { /type "allow" /glob "* /libs/*"   }
+#/0041 { /type "deny"  /glob "* /libs/shindig/proxy*" } # if you enable /libs close access to proxy
+
+#/0042 { /type "allow" /glob "* /home/*"   }
+#/0043 { /type "allow" /glob "* /tmp/*"    }
+#/0044 { /type "allow" /glob "* /var/*"    }
+
+# Enable access required for cloud services
+/0045 { /type "allow" /glob "GET /etc/clientcontext/legacy/config.init.js*" }
+/0046 { /type "allow" /glob "GET /etc/clientcontext/legacy/config.json*" }
+/0047 { /type "allow" /glob "GET /etc/clientcontext/default/content/jcr:content/stores.init.js*" }
+/0048 { /type "allow" /glob "GET /libs/cq/i18n/dict.en.json*" }
+/0049 { /type "allow" /glob "GET /libs/cq/security/userinfo.json*" }
+
+
+# Enable features
+/0063 { /type "allow" /glob "GET /libs/wcm/stats/tracker.js*" } #enable page tracking
+
+# Deny content grabbing
+/0087 { /type "allow" /glob "GET *.1.json*" }          # allow one-level json requests
+
+# Allow Legacy URLs so we can redirect them
+/0135 { /type "allow" /glob "GET /about*" }
+/0136 { /type "allow" /glob "GET /childhoodobesity*" }
+/0137 { /type "allow" /glob "GET /coverage*" }
+/0138 { /type "allow" /glob "GET /grantees*" }
+/0139 { /type "allow" /glob "GET /grants*" }
+/0140 { /type "allow" /glob "GET /healthpolicy*" }
+/0141 { /type "allow" /glob "GET /humancapital*" }
+/0142 { /type "allow" /glob "GET /multicultural*" }
+/0143 { /type "allow" /glob "GET /newsroom*" }
+/0144 { /type "allow" /glob "GET /patterson*" }
+/0145 { /type "allow" /glob "GET /pioneer*" }
+/0146 { /type "allow" /glob "GET /pr*" }
+/0147 { /type "allow" /glob "GET /publichealth*" }
+/0148 { /type "allow" /glob "GET /qualityequality*" }
+/0149 { /type "allow" /glob "GET /video*" }
+/0150 { /type "allow" /glob "GET /vulnerablepopulations*" }
+/0151 { /type "allow" /glob "GET /goto*" }
+/0152 { /type "allow" /glob "GET /applications/solicited/cfp.jsp*" }
+
+# Allow RSS Links
+/0153 { /type "allow" /glob "GET /rss*" }
+/0154 { /type "allow" /extension "rssfeed" /path "/content/rwjf/en/blog*" }
+
+# Allow RWJF Action servlet
+/0155 { /type "allow" /glob "GET /action/*" }
+
+# Allow Sitemap and Robots.txt
+/0200 { /type "allow" /glob "GET /sitemap.xml*" }
+/0201 { /type "allow" /glob "GET /robots.txt*" }
+/0202 { /type "allow" /glob "GET /google15923c166ee79c39.html*" }
+
+# Deny .export.zip
+/0203 { /type "deny"  /glob "GET *.export.zip*" }
+
+# Allow the favicon directly so we can use ?v to force browser to ignore cache
+/0204 { /type "allow" /glob "GET /etc/designs/rwjf/favicon.ico*" }
+
+# Allow Client Contexts introduced in 5.6
+/0205 { /type "allow" /glob "GET /etc/clientcontext/default/contextstores/twitterprofiledata/loader.json*" }
+/0206 { /type "allow" /glob "GET /etc/clientcontext/default/contextstores/fbprofiledata/loader.json*" }
+/0207 { /type "allow" /glob "GET /etc/clientcontext/default/contextstores/fbinterestsdata/loader.json*" }
+
+# Allow newsletters
+/0208 { /type "allow" /glob "GET /etc/newsletters/*" }
+
+# Special POST Rules
+/0300 { /type "allow" /glob "POST /action/contactlist/sendContactForm *" }
+/0301 { /type "allow" /glob "POST /action/subscription *" }
+/0302 { /type "allow" /glob "POST /action/manageprofile *" }
+/0303 { /type "allow" /glob "POST */j_security_check *" }
+/0304 { /type "allow" /glob "POST /content/rwjf/en/manage-subscriptions/_jcr_content.confirm.html *" }
+/0305 { /type "allow" /glob "POST /action/eventregistration *" }
+/0306 { /type "allow" /glob "POST *_jcr_content.send.json *" }
+/0308 { /type "allow" /glob "POST /action/commtoolboxeventreg *" }
+#There are more of these at the bottom (after second set of extension rules)
+
+# Deny groovy console vanity
+/0307 { /type "deny"  /glob "GET /groovyconsole*" }
+
+#More GET rules
+/0601 { /type "allow" /glob "GET /googlea53f44dfebb1a016.html *" }
+/0602 { /type "allow" /glob "GET /etc/focusAreas.json *" }
+/0603 { /type "allow" /glob "GET /etc/stackedAreaChart.json *" }
+/0604 { /type "allow" /glob "GET /etc/treeMap.json *" }
+/0605 { /type "allow" /glob "GET /etc/designs/rwjf/clientlibs/grants-explorer/data/locations.json *" }
+/0606 { /type "allow" /extension '(webm|mp4)' /path "/content/*" }
+/0607 { /type "allow" /selectors '(update|latest|search|more|tweets|upcoming|closed|active|rto_ref)' /extension '(json|xml|html|feed|webm|mp4)' /path "/content/*" }
+/0608 { /type "allow" /extension 'json' /path "/content/dam/COH/graph-data*" }
+/0610 { /type "allow" /selectors 'segment' /extension 'js' /path "/etc/segmentation*" }
+
+#Allow rules for particular css/js/img
+/0700 {/type "allow" /extension '(css|eot|gif|ico|jpeg|jpg|js|gif|pdf|png|svg|swf|ttf|woff|woff2|html)' /path '/etc/(designs|clientlibs)/.*' }
+/0701 {/type "allow" /extension 'css' /path "/css/restriction/generated/restrictions-publishing-generated" }
+/0702 {/type "allow" /extension 'js' /selectors '(sitecatalyst|config)' /path "/en/_jcr_content/analytics" }
+/0703 {/type "allow" /extension '(css|eot|gif|ico|jpeg|jpg|js|gif|pdf|png|svg|swf|ttf|woff|woff2|html)' /path '/wcs\/.*' }
+
+#Allow Download assets and interactive
+/0704 { /type "allow" /path '/content\/dam\/farm\/.*\/rwjf([0-9]*$|[0-9,_]*)' }
+/0705 { /type "allow" /method "GET" /extension '(json|jpg|js|xml|html|swf|gif|css|json|png|svg|jsp|txt|rtf|flv|csv|mp3)' /path '/content/dam/(annual-message|files/interactives)/.*' }
+/0706 { /type "allow" /method "GET" /extension 'json' /selectors "model" /path "/content/rwjf/*" }

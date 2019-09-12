@@ -1,0 +1,34 @@
+RedirectMatch 301 ^/en/cultureofhealth/approach(.html)? /en/cultureofhealth/about/how-we-got-here.html
+RedirectMatch 301 ^/en/cultureofhealth/sources(.html)? /en/cultureofhealth/resources.html
+
+# base pages
+RedirectMatch 301 ^/en/cultureofhealth/terms(.html)?$ /en/cultureofhealth/terms-of-use.html
+RedirectMatch 301 ^/en/cultureofhealth/stories(.html)? /en/cultureofhealth/what-were-learning/sentinel-communities.html
+RedirectMatch 301 ^/en/cultureofhealth/contact-us(.html)? /en/cultureofhealth/contact.html
+
+# action areas and their drivers
+RedirectMatch 301 ^/en/cultureofhealth/shared-value/mindsets(.html)?   /en/cultureofhealth/taking-action/making-health-a-shared-value/mindsets-and-expectations.html
+RedirectMatch 301 ^/en/cultureofhealth/shared-value/civic-engagement(.html)?  /en/cultureofhealth/taking-action/making-health-a-shared-value/civic-engagement.html
+RedirectMatch 301 ^/en/cultureofhealth/shared-value/community(.html)?  /en/cultureofhealth/taking-action/making-health-a-shared-value/sense-of-community.html
+
+RedirectMatch 301 ^/en/cultureofhealth/shared-value(.html)?  /en/cultureofhealth/taking-action/making-health-a-shared-value.html
+
+
+RedirectMatch 301 ^/en/cultureofhealth/cross-sector-collaboration/investment(.html)?  /en/cultureofhealth/taking-action/fostering-cross-sector-collaboration/investment-in-collaboration.html
+RedirectMatch 301 ^/en/cultureofhealth/en/cross-sector-collaboration/policies(.html)?  /en/cultureofhealth/taking-action/fostering-cross-sector-collaboration/policies-that-support-collaboration.html
+RedirectMatch 301 ^/en/cultureofhealth/ross-sector-collaboration/partnerships(.html)?  /en/cultureofhealth/taking-action/fostering-cross-sector-collaboration/quality-of-partnerships.html
+
+RedirectMatch 301 ^/en/cultureofhealth/cross-sector-collaboration(.html)?  /en/cultureofhealth/taking-action/fostering-cross-sector-collaboration.html
+RedirectMatch 301 ^/en/cultureofhealth/healthier-communities/environment-physical-issues(.html)?  /en/cultureofhealth/taking-action/creating-healthier-communities/built-environment.html
+RedirectMatch 301 ^/en/cultureofhealth/healthier-communities/social-economic(.html)?  /en/cultureofhealth/taking-action/creating-healthier-communities/social-and-economic-environment.html
+RedirectMatch 301 ^/en/cultureofhealth/healthier-communities/policy-and-governance(.html)?  /en/cultureofhealth/taking-action/creating-healthier-communities/policy-and-governance.html
+RedirectMatch 301 ^/en/cultureofhealth/healthier-communities(.html)?  /en/cultureofhealth/taking-action/creating-healthier-communities.html
+RedirectMatch 301 ^/en/cultureofhealth/integrated-systems/access(.html)?  /en/cultureofhealth/taking-action/strengthening-services-and-systems/access-to-care.html
+RedirectMatch 301 ^/en/cultureofhealth/integrated-systems/balance-integration(.html)?  /en/cultureofhealth/taking-action/strengthening-services-and-systems/balance-and-integration.html
+RedirectMatch 301 ^/en/cultureofhealth/integrated-systems/consumer-experience(.html)?  /en/cultureofhealth/taking-action/strengthening-services-and-systems/consumer-experiences.html
+RedirectMatch 301 ^/en/cultureofhealth/integrated-systems(.html)?  /en/cultureofhealth/taking-action/strengthening-services-and-systems.html
+
+RedirectMatch 301 ^/en/cultureofhealth/outcome/enhance-well-being(.html)?  /en/cultureofhealth/taking-action/outcome-improved-population-health--well-being--and-equity/individual-and-community-well-being.html
+RedirectMatch 301 ^/en/cultureofhealth/outcome/managed-disease(.html)?  /en/cultureofhealth/taking-action/outcome-improved-population-health--well-being--and-equity/managed-chronic-disease.html
+RedirectMatch 301 ^/en/cultureofhealth/outcome/reduced-health-costs(.html)?   /en/cultureofhealth/taking-action/outcome-improved-population-health--well-being--and-equity/reduced-health-care-costs.html
+RedirectMatch 301 ^/en/cultureofhealth/outcome(.html)?  /en/cultureofhealth/taking-action/outcome-improved-population-health--well-being--and-equity.html
